@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.27)  18 OCT 2026 10:58
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.27)  19 OCT 2026 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -855,13 +855,15 @@ Underfull \hbox (badness 6477) in paragraph at lines 125--131
 \TU/lmr/m/n/10 tion, and scalable manufacturing
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 138.
+File: BandTheory.png Graphic file (type bmp)
+<BandTheory.png>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 141.
 (f:/Latex/main/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (f:/Latex/main/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 138.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 141.
  (f:/Latex/main/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (f:/Latex/main/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -869,124 +871,221 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) (f:/Latex/main/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Underfull \hbox (badness 7099) in paragraph at lines 151--153
-[]\TU/lmr/bx/n/10 Resistor/capacitor\TU/lmr/m/n/10 : circuit ele-
+File: LEDColor.png Graphic file (type bmp)
+<LEDColor.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
+
  []
 
+File: TransistorConsist.png Graphic file (type bmp)
+<TransistorConsist.png>
 
-Overfull \hbox (107.73848pt too wide) detected at line 162
-\OML/cmm/m/it/10 ^^V[] \OT1/cmr/m/n/10 = [][] (\OML/cmm/m/it/10 V[] \OMS/cmsy/m/n/10 ^^\ \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;  ^^V[] \OT1/cmr/m/n/10 = [][] (\OML/cmm/m/it/10 V[] \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 )
- []
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--174
-[]\TU/lmr/m/n/10 Candidate materials: Si, III–V
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--174
-\TU/lmr/m/n/10 molecules, graphene and carbon
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+[]\TU/lmr/m/n/10 Candidate materials: Si, III–V
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+\TU/lmr/m/n/10 molecules, graphene and carbon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
+\TU/lmr/m/n/10 crystal(like liquid crystal display,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
+\TU/lmr/m/n/10 LCD), organic materials(like or-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
+\TU/lmr/m/n/10 polyvinylidene fluoride, PVDF),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
+\TU/lmr/m/n/10 elastomers(like silicone elastomer,
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 227--235
+[]\TU/lmr/bx/n/10 Why epidermal sensors \TU/lmr/m/n/10 High-
+ []
+
+Missing character: There is no ε (U+03B5) in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 []\TU/lmr/m/n/10 Origami/kirigami and composite
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 219--221
+Underfull \hbox (badness 5446) in paragraph at lines 290--292
 \TU/lmr/m/n/10 fatigue resistance and mechanical
  []
 
 
-Overfull \hbox (60.05803pt too wide) in paragraph at lines 253--253
-\TU/lmr/m/n/9 trolytes/metabolites/hormones|  
+Overfull \hbox (9.15102pt too wide) in paragraph at lines 324--324
+\TU/lmr/m/n/8 trolytes/metabolites 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--268
-[]\TU/lmr/m/n/10 Proteins/enzymes (cytokines, tro-
+Underfull \hbox (badness 10000) in paragraph at lines 331--338
+[]\TU/lmr/bx/n/10 Metabolites: \TU/lmr/m/n/10 glucose, lactate,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--268
-\TU/lmr/m/n/10 molecules support cardiovascular,
+Underfull \hbox (badness 6493) in paragraph at lines 331--338
+\TU/lmr/m/n/10 systematic metabolic and clinical
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 338--342
+[]\TU/lmr/bx/n/10 Hormones: \TU/lmr/m/n/10 chemical messenger
  []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 277--281
-[]\TU/lmr/m/n/10 Aptamer: synthetic ssDNA/RNA
- []
-
-Missing character: There is no 
- (U+000A) in font [lmroman10-regular]:mapping=tex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
-[]\TU/lmr/m/n/10 Alternatives: piranha
+Underfull \hbox (badness 10000) in paragraph at lines 338--342
+\TU/lmr/m/n/10 Measure for stress, reproductive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
-\TU/lmr/m/n/10 ($[]$; strongly
+Underfull \hbox (badness 10000) in paragraph at lines 342--350
+\TU/lmr/m/n/10 ponins, lactate dehydrogenase,
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 320--322
-\TU/lmr/m/n/10 exothermic), ozone, solvent, UV-
+Underfull \hbox (badness 10000) in paragraph at lines 342--350
+\TU/lmr/m/n/10 Neuropeptide: Neuropeptide
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 333--336
-\TU/lmr/m/n/10 is optical energy per area; un-
+Underfull \hbox (badness 10000) in paragraph at lines 342--350
+\TU/lmr/m/n/10 Y(NPY), substance P, calcitonin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--346
+Underfull \hbox (badness 10000) in paragraph at lines 358--363
+\TU/lmr/m/n/10 Biorecognition elements are core
+ []
+
+File: SafetyIcon1.png Graphic file (type bmp)
+<SafetyIcon1.png>
+File: SafetyIcon2.png Graphic file (type bmp)
+<SafetyIcon2.png>
+File: SafetyIcon3.png Graphic file (type bmp)
+<SafetyIcon3.png>
+File: SafetyIcon4.png Graphic file (type bmp)
+<SafetyIcon4.png>
+
+Underfull \hbox (badness 5161) in paragraph at lines 439--442
+\TU/lmr/m/n/10 At $\OT1/cmr/m/n/10 25[]$\TU/lmr/m/n/10 C, $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 ][\OML/cmm/m/it/10 OH[]\OT1/cmr/m/n/10 ] = 10[]$\TU/lmr/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--460
+\TU/lmr/m/n/10 Wet methods: piranha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--460
+\TU/lmr/m/n/10 ($[]$, 10-30 min,
+ []
+
+[3]
+File: Wavelength.png Graphic file (type bmp)
+<Wavelength.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
 []\TU/lmr/bx/n/10 Soft lithography\TU/lmr/m/n/10 : elastomeric
  []
 
 
-Underfull \hbox (badness 6825) in paragraph at lines 357--359
-[]\TU/lmr/bx/n/10 Evaporation\TU/lmr/m/n/10 : source is heated
+Underfull \hbox (badness 10000) in paragraph at lines 491--495
+\TU/lmr/m/n/10 graphene (LIG): Laser converts
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--374
+Underfull \hbox (badness 5862) in paragraph at lines 491--495
+\TU/lmr/m/n/10 polymer precursors to conductive
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 507--509
+[]\TU/lmr/bx/n/10 Evaporation\TU/lmr/m/n/10 : source is heated
+ []
+
+File: StepCoverage.png Graphic file (type bmp)
+<StepCoverage.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--532
 []\TU/lmr/bx/n/10 CVD\TU/lmr/m/n/10 : gaseous precursors re-
  []
 
 
-Underfull \hbox (badness 7595) in paragraph at lines 371--374
+Underfull \hbox (badness 7595) in paragraph at lines 529--532
 \TU/lmr/m/n/10 type/flow and time, determining
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--374
+Underfull \hbox (badness 10000) in paragraph at lines 529--532
 \TU/lmr/m/n/10 thickness, crystallinity and film
  []
 
-[2]
-Underfull \hbox (badness 5446) in paragraph at lines 404--407
-\TU/lmr/m/n/10 sampling constraint and mechani-
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--540
+[]\TU/lmr/bx/n/10 Plasma Enhanced CVD,
  []
 
-[3] (./cheatsheet.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--540
+\TU/lmr/bx/n/10 PECVD: \TU/lmr/m/n/10 plasma increases ion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--540
+\TU/lmr/bx/n/10 ALD: \TU/lmr/m/n/10 self-limiting, layer-by-layer,
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 544--548
+\TU/lmr/m/n/10 substrate compatible, but unifor-
+ []
+
+[4] (./cheatsheet.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `cheatsheet.out' has not changed.
-(rerunfilecheck)             Checksum: 3372A08BDBD92EB827C1B860EFC2E916;5552.
+(rerunfilecheck)             Checksum: 00CA4F3C857F2389D1FDAB275C0C2CE2;6092.
  ) 
 Here is how much of TeX's memory you used:
- 23735 strings out of 473832
- 533156 string characters out of 5728108
- 1008115 words of memory out of 5000000
- 46514 multiletter control sequences out of 15000+600000
- 565776 words of font info for 76 fonts, out of 8000000 for 9000
+ 23848 strings out of 473832
+ 536899 string characters out of 5728108
+ 1000699 words of memory out of 5000000
+ 46618 multiletter control sequences out of 15000+600000
+ 565774 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1321b,1459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,1321b,1464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cheatsheet.xdv (3 pages, 161376 bytes).
+Output written on cheatsheet.xdv (4 pages, 249268 bytes).

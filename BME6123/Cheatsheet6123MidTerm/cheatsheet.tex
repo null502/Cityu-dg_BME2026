@@ -134,41 +134,53 @@
 \section{2. Devices \& Materials}
 \subsection{Band theory}
 \begin{itemize}
+  \item \key{Electrical conductivity:} a measure of the number of charge carriers available for electric-field acceleration.
+  \item Nature of the band picture of each solid can be indicative of conductivity
+  \includegraphics[width=1\linewidth]{BandTheory.png}
   \item Atomic orbitals broaden into energy bands: valence band (VB),
   conduction band (CB), separated by band gap $E_g$.
   \item \key{Fermi level}: energy with maximum electron occupation
   probability at absolute zero.
   \item Metals: overlapping bands or $E_g\approx0$; semiconductors: moderate
-  gap; insulators: large gap. Examples:
-  Si $E_g=1.12$ eV, Ge $=0.66$ eV, GaAs $=1.41$ eV,
-  SiO$_2\approx9$ eV, diamond $=5.47$ eV.
+  gap; insulators: large gap. \\
+  E.g. Si $E_g=1.12$ eV, Ge $=0.66$ eV, GaAs $=1.41$ eV, SiO$_2\approx9$ eV, diamond $=5.47$ eV.
   \item Donors (N, P, As) produce \key{n-type}; acceptors (B, Al, Ga)
   produce \key{p-type} material.
 \end{itemize}
 
 \subsection{Electronic building blocks}
 \begin{itemize}
-  \item \key{Resistor/capacitor}: circuit elements and pressure, strain,
-  temperature, gas and photodetectors.
-  \item \key{Diode}: rectification; also LED, photodetector and solar cell.
-  Emission color is set by semiconductor band gap.
-  \item \key{Transistor}: switch, amplifier, sensor and ion-to-electron
-  converter; important for amplifying weak biological signals.
+  \item \key{Resistor/capacitor:} a broad range of applications, from electronics circuit to sensors, to actuators. \\
+  Pressure, strain, temperature, gas sensors and photodetectors.\\
+  E.g. Strain gauges, Thermal couples, Gas detectors.
+  \item \key{Diode:} Well-known as rectifiers. Widely used in IC. \\
+  Emission color is set by semiconductor band gap.\\
+  \includegraphics[width=1\linewidth]{LEDColor.png}
+  E.g. Photodetectors, Solar cells, Emitting components, LED. \\
+  \item \key{Transistor:} Signal amplification for biological signals.\\
+  E.g. Electrical switches, Amplifier, Gas/Tactile sensors and Ion-to-electron converter.\\
+  Important for amplifying weak biological signals.\\
+  Transiting ionic shifts in biological fluids into readable electrical currents.\\
+  \includegraphics[width=1\linewidth]{TransistorConsist.png}
+  Linear Mobility ($\mu_{\rm lin}$) and Saturation Mobility ($\mu_{\rm sat}$)：
 \end{itemize}
 \formula{\displaystyle
 \mu_{\rm lin}=\frac{L}{WC_iV_D}\frac{\partial I_D}{\partial V_G}
-\ (V_D\ll V_G),\qquad
+\ (V_D\ll V_G)}
+\formula{\displaystyle
 \mu_{\rm sat}=\frac{2L}{WC_i}\frac{\partial I_D}{\partial V_G}
 \ (V_D\ge V_G)}
 
 \subsection{Crystal and material classes}
 \begin{itemize}
-  \item Si has diamond lattice; common structures include FCC, BCC and HCP.
-  Miller notation: $[abc]$ direction, $(abc)$ plane; crystal orientation
-  affects wafer processing and anisotropic etching.
-  \item Single crystal: long-range order and high electronic performance.
-  Polycrystal: grain boundaries affect transport. Amorphous materials have
-  lower thermal conductivity, can be transparent and stable, but deform more.
+  \item \key{Common crystal structure:} 
+  Face-centered cubic (FCC), body-centered cubic (BCC) and hexagonal close-packed (HCP).
+  \item Si has diamond lattice; Miller notation: $[abc]$ direction, $(abc)$ plane; 
+  crystal orientation affects wafer processing and anisotropic etching.
+  \item \key{Crystal structure:} \\
+  Single crystal, long-range order and high electronic performance.\\
+  Polycrystal, grain boundaries affect transport. \\
+  Amorphous materials have lower thermal conductivity, can be transparent and stable, but deform more.\\
   \item Candidate materials: Si, III--V (GaAs), metal oxides, polymers,
   small molecules, graphene and carbon nanotubes.
 \end{itemize}
@@ -177,18 +189,58 @@
 \begin{itemize}
   \item Conventional electronics fail at only about $1$--$3\%$ strain;
   skin reaches $\sim30\%$ and joints can reach $\sim100\%$.
-  \item Soft substrates: PDMS, polyurethane, hydrogels and composites;
-  matching Young's modulus to tissue reduces mismatch and irritation.
-  \item \key{Liquid metals}: Ga, EGaIn (75.2\% Ga/24.8\% In) and Galinstan.
-  They remain conductive while deforming (up to about 700\% strain).
+  \item \key{Flexible electronics advantages:}\\
+  \key{Soft:} like human skin, it provides inspiration by its ability to sense 
+  (touch, temperature, humidity), self-heal, and regulate temperature.\\
+  \key{Mechanical properties:}Electronic materials that are intrinsically stretchable 
+  have mechanical properties defined by the encasing material.\\
+  \key{Body compatibility:} Materials that are softer than skin can make comfortable, 
+  conformal, and 'mechanically transparent' interfaces with the body for 
+  'electronic skin' (e-skin) and prosthesis.\\
+  \key{Adaptability:} soft electronics integrate well with soft robotics.
+  \item \key{Liquid metals:} a class of soft materials that can flow to enable 
+  'shape reconfigurable' electronic components and self healing structures.\\
+  Liquid metals are intrinsically deformable, with Highly conductive, 
+  which maintains metallic conductivity up to ~700 \% strain.\\
+  E.g. Ga, eutectic gallium indium (EGaIn, 75.2\% Ga, 24.8\% In) and Galinstan
+  (67 \% Ga, 20.5 \% In and 12.5 \% Sn).\\
   Ga alloys form an oxide skin in oxygen; injection/vacuum filling patterns
   them into microchannels.
-  \item \key{2D materials}: graphene, black phosphorus and MXene.
+  \item \key{2D materials:} graphene, black phosphorus and MXene.\\
   Single/few atomic layers give high surface area, conductivity,
-  transparency, flexibility and easy functionalization.
+  transparency, flexibility and easy functionalization.\\
+  \item \key{Some other materials:} liquid crystal(like liquid crystal display, LCD),
+  organic materials(like organic light-emitting diode, OLED), 
+  polymers(like amorphous polymers, PMMA; semicrystalline polymers, 
+  PP, PE, PET; rystalline polymers, PTFE; polyvinylidene fluoride, PVDF),
+  elastomers(like silicone elastomer, PDMS), woven fabrics.
 \end{itemize}
 
+
 \section{3. Mechanics \& Design}
+\subsection{Epidermal sensors}
+\begin{itemize}
+  \item \key{Material choose:} soft polymer (PDMS, Polyurethan, hydrogels etc.)
+  and composite as substrate; match human tissues, minimizing mechanical
+  mismatch and discomfort; matching Young's modulus of a device materials to that of 
+  biological organs or tissue is critical for stretchable bioelectronics.
+  \item \key{Why epidermal sensors} High-fidelity is the key to the success 
+  of wearable health monitors, which essentially demands both high signal-to-noise 
+  ratio and low susceptibility to motion artifacts.State-of-the-art wearable devices 
+  such as the wrist or arm bands and chest straps are not capable of intimate-skin 
+  integration and hence cannot provide medical-grade data.\\
+  Pattern intrinsically stiff and blanket high-performance nanomembranes into 
+  structurally soft and stretchable filamentary serpentines, and transfer print them 
+  from rigid wafers to ultrathin, skin-like elastomeric substrates could solve this problem.
+  \item \key{Essential properties:}\\
+  Conformality: sensors must closely match and conform to the topography of 
+  human skin to maintain comfort and accurate physiological monitoring.\\
+  Flexibility and Stretchability: To accommodate natural motion and skin 
+  deformation, sensor require stretchability.\\
+  Stable adhesion: adhesive layers or structural microfeatures are 
+  needed to keep sensors securely.
+\end{itemize}
+
 \subsection{Conformability}
 \begin{itemize}
   \item Conformality is the ability to maintain intimate contact with
@@ -205,15 +257,34 @@ D=\frac{Et^3}{12(1-\nu^2)}}
   mechanical reliability.
 \end{itemize}
 
+\subsection{Breathability}
+\begin{itemize}
+  \item Permeable structures allow moisture and air exchanges, 
+  reducing sweat accumulation and preventing skin issue during prolonged use.
+\end{itemize}
+
+\subsection{Biodegradability}
+\begin{itemize}
+  \item Material should not cause biotoxicity, irritation, allergic reactions, 
+  or disrupt normal skin function, even during long term wear.
+  \item The use of biodegradable materials in electronics can reduce the 
+  accumulation of persistent solid waste. Biodegradable materials allow devices 
+  to safely dissolve in the body, eliminating the need for a second surgery and 
+  reducing medical risks, cost, and patient discomfort.
+\end{itemize}
+
 \subsection{Stretchable layouts}
 \begin{itemize}
   \item \key{Wavy/wrinkled}: prestrain a soft substrate, attach a stiff thin
   film, then release; out-of-plane waves accommodate extension.
   \item \key{Serpentine}: meandering ribbons rotate, bend and buckle so
-  material strain is much lower than applied strain. Important parameters:
-  width $w$, arc radius $R$, arc angle $\alpha$, arm length $l$.
+  material strain is much lower than applied strain. \\
+  The end-to-end distance of a unit cell is denoted by S, which is a function of:
+  width $w$, arc radius $R$, arc angle $\alpha$, arm length $l$. \\
+  The effective applied strain εapp is defined as:\\
+  \formula{\displaystyle \epsilon_{app} = \frac{2 u_0}{S}}
   Smaller $w/R$ and longer arms generally improve stretchability.
-  \item \key{Island--bridge}: rigid functional islands connected by soft,
+  \item \key{Island-bridge}: rigid functional islands connected by soft,
   wavy or serpentine bridges. Non-coplanar layouts are usually more
   stretchable; fractal interconnects increase coverage and compliance.
   \item Origami/kirigami and composite structures add geometric
@@ -234,12 +305,12 @@ D=\frac{Et^3}{12(1-\nu^2)}}
 
 \section{4. Biomarkers \& Wearable Sensing}
 \subsection{Biofluids}
-\begin{center}\small
+\begin{center}\footnotesize
 \begin{tabularx}{\linewidth}{@{}lYY@{}}
 \toprule
 Fluid & Advantages & Main limitations\\
 \midrule
-Sweat & Non-invasive; surface-accessible; electrolytes/metabolites/hormones
+Sweat & Non-invasive; surface-accessible; electrolytes/metabolites \quad /hormones
 & low volume, evaporation, contamination, rate and site variation\\
 ISF & Close to blood for small molecules; rich biomarkers
 & invasive sampling, low volume, discomfort\\
@@ -255,32 +326,53 @@ Urine & Rich and abundant biomarker source
 
 \subsection{Biomarker classes}
 \begin{itemize}
-  \item \key{Electrolytes}: Na$^+$, K$^+$, Mg$^{2+}$, Ca$^{2+}$, Cl$^-$;
-  hydration, cardiac, liver and metabolic status.
-  \item \key{Metabolites}: glucose, lactate, uric acid, alcohol and amino
-  acids; diabetes, metabolism and exercise. Sweat glucose is typically
-  10--100 times lower than blood glucose.
-  \item \key{Hormones}: cortisol, estradiol and peptides; stress,
-  endocrine, reproductive, sleep and mood monitoring.
-  \item Proteins/enzymes (cytokines, troponin, LDH), nucleic acids,
-  bacteria/cells, drugs and other small molecules support cardiovascular,
-  cancer, wound, infection and therapeutic monitoring.
+  \item \key{Electrolytes:} Na$^+$, K$^+$, Mg$^{2+}$, Ca$^{2+}$, Cl$^-$ etc.;\\
+  changes in specific condition like hydration, cardiac, liver and metabolic status.
+  \item \key{Metabolites:} glucose, lactate, uric acid, alcohol and amino acids; 
+  biomarkers for metabolic diseases, diabetes and physical performance; 
+  sweat and ISF glucose can correalte with blood glucose, but the signal is really small.\\
+  E.g. sweat glucose is typically 10--100 times lower than blood glucose.\\
+  Lactate is a unique biomarker. 
+  Sweat lactate is useful for monitoring sweat gland activity and thermoregulation; 
+  Blood lactate is key for assessing systematic metabolic and clinical conditions.
+  \item \key{Hormones:} chemical messenger of the endocrine system, affecting metabolism, 
+  growth, sexual function, reproduction, sleep and mood, tissue function.\\
+  Cortisol, estradiol and other peptide hormones.\\
+  Measure for stress, reproductive health and endocrine disorders.
+  \item \key{Proteins/enzymes:} active in biological processes like enzymatic reactions, 
+  substance and energy transport, and cytoskeleton construction.\\
+  Inflammatory marker, cardiac troponins, lactate dehydrogenase, tyrosinase and others.\\
+  Cytokine and neuropeptides are important class of protein and peptide biomarker.\\
+  Proinflammatory cytokines: IL-1$\alpha$, IL-1$\beta$, IL-6, TNF-$\alpha$, 
+  IL-8 are commonly detected in sweat.\\
+  Neuropeptide: Neuropeptide Y(NPY), substance P, calcitonin gene-related peptide 
+  (CGRP) play roles in mood, pain, satiety, and stress regulation.
+  \item \key{Others:} nucleic acids; bacteria/cells; 
+  antibiotics or other medication presence support therapeutic drug monitoring;
+  small molecules like nutrients, vitamins, and signaling small molecules, 
+  emerging biomarkers for personalize health and nutrient monitoring.
 \end{itemize}
 
 \subsection{Recognition and transduction}
 \begin{itemize}
+  \item \key{How to sense biomarkers:}\\
+  Biorecognition elements are core molecular components in biosensors.\\
+  Specifically bind to target analytes, enabling selective detection.\\
+  Convert presence of biomolecules into a measurable signals.\\
+  Immobilized on solid-state transducer surface.
   \item Biorecognition elements: enzymes, antibodies/affinity proteins,
   peptides, aptamers, receptors and molecularly imprinted polymers (MIPs).
   They bind/catalyse the target and are immobilized on a transducer.
   \item Enzyme example: glucose oxidase catalyses glucose, producing H$_2$O$_2$;
   electrode redox current increases with analyte concentration.
-  \item Aptamer: synthetic ssDNA/RNA binds target; target-induced
+  \item Aptamer: synthetic DNA/RNA sequences bind target; target-induced
   conformational change changes current, voltage, impedance, fluorescence
-  or color. Modes include sandwich, dissociation, competitive replacement
-  and structure switching.
+  or color. \\
+  Modes include sandwich or sandwich-like mode, target-induced dissociation(TID), 
+  competitive replacement and structure switching.
 \end{itemize}
 
-\begin{center}\small
+\begin{center}\footnotesize
 \begin{tabularx}{\linewidth}{@{}lY@{}}
 \toprule
 Method & Principle / typical use\\
@@ -298,69 +390,135 @@ Electromechanical & pressure, strain, bending, acceleration or vibration\\
 \section{5. Processing I: Cleanroom \& Lithography}
 \subsection{Safety and contamination}
 \begin{itemize}
-  \item Identify chemical, electrical, fire and sharps hazards; use PPE,
-  correct containers, exits/showers and MSDS. HF is a contact poison and
-  attacks glass; never treat it as an ordinary acid.
-  \item Cleanroom defects include particles, organics, ions, moisture and
-  surface damage. DI water is ion-free: at $25^\circ$C,
-  $[H^+][OH^-]=10^{-14}$, $[H^+]=[OH^-]=10^{-7}$ and
-  resistivity $\approx18.5~\mathrm{M\Omega\,cm}$.
+  \item Identify chemical, electrical, fire and sharps hazards.\\
+  \includegraphics[width=1\linewidth]{SafetyIcon1.png}
+  \includegraphics[width=1\linewidth]{SafetyIcon2.png}
+  \includegraphics[width=1\linewidth]{SafetyIcon3.png}
+  \item Use PPE, correct containers, exits/showers and material safety data sheets (MSDS). \\
+  E.g. Alkali (NaOH, etc) slowly etches glass; HF strongly etches glass.
+  \includegraphics[width=1\linewidth]{SafetyIcon4.png}
 \end{itemize}
 
+\subsection{Cleanroom contaminations}
+\begin{itemize}
+  \item \key{Physical:} foreign particles in products like glass, metal, dust, rubber.\\
+  Due to poor maintenance or defective packaging.
+  \item \key{Chemical:} unintended chemical altering composition like residual solvents, cleaning agents.\\
+  Due to improper handling or raw material impurities.
+  \item \key{Microbial:} microorganisms in products like bacteria, fungi, spores.\\
+  Due to poor aseptic techniques or contaminated water/air.
+  \item \key{Endotoxin:} bacterial toxins causing immune reactions, like lipopolysaccharides in sterile products.\\
+  Due to imporper sterilization or contaminated raw WFI.
+\end{itemize}
+
+\subsection{Defects}
+\begin{itemize}
+  \item \key{Invisible defects:} Invisible defects reduce efficiencies or even fail performance of electronic devices, 
+  like defects in LED leading energy lost in the form of heat instead of light.
+  \item \key{Water defects:} The presence of dissolved substances in water, such as salts, minerals, 
+  and gases, can significantly decrease the resistivity of the water.\\
+  High leakage current can significantly impact the performance and reliability of semiconductor devices. 
+  It can lead to increased power consumption, reduced device reliability, and accelerated degradation.
+mechanisms
+\end{itemize}
+
+\begin{center}\footnotesize
+\begin{tabularx}{\linewidth}{@{}lY@{}}
+\toprule
+water resistivity \\ ($\Omega\,cm,$ at 25$^\circ$C) & leakage current ($A/\mu m^2$)\\
+\midrule
+5 & $12*10^{-9}$\\
+10 & $10*10^{-9}$\\
+13 & $5*10^{-9}$\\
+15 & $1*10^{-9}$\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{itemize}
+  \item In Cleanroom, deionized (DI) water is used. DI water is ion-free: \\
+  At $25^\circ$C, $[H^+][OH^-]=10^{-14}$, $[H^+]=[OH^-]=10^{-7}$ 
+  resistivity $\approx18.5M\Omega*cm$.
+\end{itemize}
+
+
 \subsection{Wafer cleaning}
-\begin{enumerate}
+\begin{itemize}
   \item DI-water ultrasonic/megasonic clean removes particles and soluble ions.
-  \item RCA SC-1: DI:H$_4$NOH:H$_2$O$_2=5:1:1$, typically
-  $75$--$80^\circ$C for 10 min; organic/particle clean, forms $\sim1$ nm SiO$_2$.
+  \item RCA SC-1: DI:H$_4$NOH:H$_2$O$_2=5:1:1$, H$_4$NOH is ammonia water, 29\% by weight of NH3; 
+  H$_2$O$_2$ is 30\% hydrogen peroxide. Typically $75$--$80^\circ$C for 10 min; 
+  organic/particle clean, forms $\sim1$ nm SiO$_2$.
   \item Optional HF 1:50--1:100, about 15 s at room temperature, strips oxide.
   \item RCA SC-2: DI:HCl:H$_2$O$_2=6:1:1$, $75$--$80^\circ$C for 10 min;
   removes ionic/metal contaminants and passivates the surface.
-\end{enumerate}
+\end{itemize}
 \begin{itemize}
-  \item Alternatives: piranha ($\mathrm{H_2SO_4:H_2O_2=3:1}$; strongly
-  exothermic), ozone, solvent, UV-ozone and plasma cleaning.
+  \item \key{Alternatives}: \\
+  Wet methods: piranha ($\mathrm{H_2SO_4:H_2O_2=3:1}$, 10-30 min, extremely exothermic, self heating up to $80^\circ$C); 
+  ozone($\mathrm{O_3}$); Organic solvent (Acetone/Isopropanol/DI water)\\
+  Dry methods: UV-ozone and plasma cleaning.
 \end{itemize}
 
 \subsection{Photolithography}
 \begin{itemize}
-  \item Typical flow: substrate clean $\rightarrow$ photoresist coat/spin
+  \item \key{Why use yellow light:}Yellow light (wavelength of about 590-620 nm) can not only effectively reduce 
+  ultraviolet (UV) radiation from the light source, but also enhance the lighting effect of visible light, 
+  thereby reducing damage to sensitive products. Clean rooms using yellow light can reduce energy consumption by 15\%-30\%.
+  \item \key{Typical flow:} substrate clean $\rightarrow$ photoresist coat/spin
   $\rightarrow$ soft bake $\rightarrow$ mask align/expose $\rightarrow$
   develop $\rightarrow$ hard bake $\rightarrow$ etch/deposit/lift-off.
-  \item Positive resist: exposed region dissolves in developer; negative
+  \item \key{Photoresists:} positive resist exposed region dissolves in developer; negative
   resist: exposed region cross-links and remains.
-  \item Photomask: patterned Cr on flat quartz/film. Alignment marks and
-  backside/IR alignment enable multilayer MEMS processing.
-  \item Yellow light ($\sim590$--$620$ nm) suppresses UV exposure of resist.
-  Dose is optical energy per area; under/overexposure changes linewidth and
-  profile. Smaller wavelength improves resolution.
-  \item Phase-shift mask changes adjacent phase by $180^\circ$ for destructive
-  interference; optical proximity correction pre-distorts the mask.
+  \item \key{Photomask:} made from Film or very flat pieces of quartz with a layer of Chromium (Cr) on one side.
+  Alignment marks and backside/IR alignment enable multilayer MEMS processing.
+  \item Phase-shift mask changes adjacent phase by $180^\circ$ for destructive interference; 
+  optical proximity correction pre-distorts the mask.
+  \item  Alignment marks printed on the wafer could be eroded after layers of processes. 
+  This could be resolved by introducing new markers in later layers.
+  \item \key{Light Interact With Resist:} There is a minimum total optical energy (dose, in mJ/area) 
+  needed to fully expose the photoresist (Energy Integrator).\\
+  $D_0$ = Lowest energy (dose) needed to “drive the photochemistry”\\
+  $D_{100}$ = Lowest energy for which all resist is removed.\\
+  Measured by characterizing the post-exposure resist thickness as a function of exposure dose.
+  \item Lithography resolution can be dramatically improved by using optical sources with smaller wavelengths
+  \includegraphics[width=1\linewidth]{Wavelength.png}
 \end{itemize}
 
 \subsection{Other patterning}
 \begin{itemize}
-  \item \key{E-beam lithography}: direct-write, high resolution, slow and
-  serial; useful for research and masks.
-  \item \key{Soft lithography}: elastomeric stamp/mold; low cost and
-  compatible with large-area flexible substrates.
-  \item \key{Laser direct writing/engraving}: maskless, rapid prototyping
-  and direct formation/patterning of conductive features.
+  \item \key{E-beam lithography}: direct-write, high resolution, slow and serial; useful for research and masks.
+  \item \key{Soft lithography}: elastomeric stamp/mold; low cost and compatible with large-area flexible substrates.
+  \item \key{Laser patterning:}\\
+  Laser direct writing (LDW): Laser to write patterns directly onto a substrate, creating conductive features.\\
+  Laser engraving: Laser remove material to carve out conductive structure (LM channel embedded in substrate).\\
+  Laser scribing (LSG) or Laser-induced graphene (LIG): Laser converts polymer precursors to conductive graphene.
 \end{itemize}
+
 
 \section{6. Processing II: Deposition \& Etching}
 \subsection{Vacuum and PVD}
 \begin{itemize}
+  \item PVD: Physical Vapor Deposition; \\ CVD: Chemical Vapor Deposition.
   \item $1~\mathrm{atm}=760~\mathrm{torr}=1.013\times10^5$ Pa;
   $1~\mathrm{torr}=133.3$ Pa. Vacuum reduces collisions and contamination.
   Base pressure is reached before process gas; sputtering then introduces
   Ar at working pressure (typically millitorr range) to sustain plasma.
+  \item \key{Mass transport:} $\lambda \approx \frac{0.5}{pressure(Pa)}$
   \item \key{Evaporation}: source is heated (thermal/e-beam); atoms travel
   ballistically to substrate, giving line-of-sight coverage.
+  \item \key{Evaporation rate:} 
+  \formula{R_{evap}=5.83 \times 10^{-2}A_s \sqrt{\frac{m}{T}} P_e} \\
+  inside $R_{evap}$ is Evaporation rate (g/s); $A_s$ is area of sources (cm2);
+  $m$ is molecular weight (g/mol); $T$ is temperature (K); 
+  $P_e$ is vapor pressure of sources (Torr) (not chamber pressure).
   \item \key{Sputtering}: Ar plasma ions bombard target and eject atoms;
-  high-energy transport, high rate and better suitability for refractory
-  metals such as Ti/W. Co-sputtering controls composition.
-\end{itemize}
-\begin{itemize}
+  high-energy transport, high deposition rate and better suitability for refractory metals such as Ti/W. 
+  Co-sputtering controls composition.
+  \item Sputter has advantages like higher pressure than evaporation, high deposition rate, 
+  better uniformity and step coverage, better stoichiometry control, and it work for most materials.\\
+  It has disadvantages like plasma induced damages(etching), more impure and defects, 
+  not good for single crystal epitaxy and mostly polycrystalline and amorphous films.\\
+  \includegraphics[width=1\linewidth]{StepCoverage.png}
   \item Interconnect trade-off: Al is cheap, stable, easy to deposit/etch and
   diffuses little in Si/SiO$_2$; Cu is more conductive and reduces RC delay
   below about 130 nm, but requires diffusion barriers/processing control.
@@ -369,18 +527,24 @@ Electromechanical & pressure, strain, bending, acceleration or vibration\\
 \subsection{CVD, ALD and solution deposition}
 \begin{itemize}
   \item \key{CVD}: gaseous precursors react/decompose at the surface;
-  controls include temperature, pressure, gas type/flow and time, determining
-  thickness, crystallinity and film quality.
+  controls include temperature, pressure, gas type/flow and time, 
+  determining thickness, crystallinity and film quality.
 \end{itemize}
 \formula{\displaystyle \mathrm{SiH_4(g)\rightarrow Si(s)+2H_2(g)}}
 \begin{itemize}
-  \item PECVD plasma increases ion energy, enabling higher rate at lower
-  temperature. \key{ALD} is self-limiting, layer-by-layer, highly uniform
-  and gives precise thickness control.
-  \item Solution methods: spin, spray, chemical bath, dip, blade, drop and
-  slot-die coating. They are inexpensive and flexible-substrate compatible,
-  but uniformity, morphology and electrical performance depend strongly on
-  process parameters.
+  \item with condition $T:580-650^\circ C, P:0.1-1  \mathrm{Torr}$
+  \item \key{Plasma Enhanced CVD, PECVD:} plasma increases ion energy, 
+  enabling higher rate at lower temperature.\\ 
+  \key{ALD:} self-limiting, layer-by-layer, highly uniform and gives precise thickness control.
+  \key{ALD} is self-limiting, layer-by-layer, highly uniform and gives precise thickness control.
+  \item \key{Electroplating:} normally used in printed circuit board (PCB), 
+  its deposition rate in the vertical direction is much higher than that on the sidewalls.
+  while it has excellent bottom-fill capability, which is suitable for high-aspect-ratio trenches and vias.
+  \item \key{Electroless plating:} typically like silver mirror reaction.
+  \item Other solution deposition techniques: spin coating, spray coating, chemical bath, 
+  dip coating, blade coating, drop casting and slot-die coating. \\
+  They are inexpensive and flexible-substrate compatible, but uniformity, 
+  morphology and electrical performance depend strongly on process parameters.
 \end{itemize}
 
 \subsection{Etching}
@@ -395,19 +559,6 @@ Electromechanical & pressure, strain, bending, acceleration or vibration\\
   $(111):(110):(100)=1:600:400$ and can use SiO$_2$/Si$_3$N$_4$ masks.
 \end{itemize}
 
-\subsection{Exam checkpoints}
-\begin{itemize}
-  \item Always connect \key{material $\rightarrow$ property $\rightarrow$
-  process $\rightarrow$ device function}. Example: thin stiff Si patterned
-  into a serpentine on PDMS gives high electronics performance with low
-  effective stiffness.
-  \item For a wearable biosensor, specify biofluid, target biomarker,
-  recognition chemistry, transduction mode, sampling constraint and
-  mechanical/biocompatibility requirement.
-  \item For fabrication questions, distinguish substrate cleaning,
-  pattern definition, film deposition and selective removal; state why a
-  chosen method fits the material and geometry.
-\end{itemize}
 
 \end{multicols*}
 \end{document}
