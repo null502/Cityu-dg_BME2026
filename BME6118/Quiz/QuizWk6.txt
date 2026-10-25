@@ -1,0 +1,180 @@
+Magnetic Resonance Imaging I: Principles Quiz
+Q1. Which statement about ¹H is correct?
+A. It has spin zero
+B. It has one proton and spin 1/2
+C. It has no magnetic moment
+D. It gives no NMR signal
+
+Correct answer: B
+Explanation: ¹H has one proton, no neutron, and nuclear spin 1/2.
+
+Q2. Which field tips net magnetization in MRI?
+A. B₀
+B. Gradients
+C. B₁
+D. Shim field
+
+Correct answer: C
+Explanation: B₁ is the transverse RF field that tips magnetization.
+
+Q3. Equilibrium longitudinal magnetization mainly comes from:
+A. A slight spin population imbalance
+B. Equal spin populations
+C. Random transverse phases
+D. Receiver coil voltage
+
+Correct answer: A
+Explanation: Slightly more spins occupy the lower-energy parallel state.
+
+Q4. At 3.0 T, proton Larmor frequency is about:
+A. 42.58 MHz
+B. 63.9 MHz
+C. 300 MHz
+D. 127.7 MHz
+
+Correct answer: D
+Explanation: For ¹H, 42.58 MHz/T × 3.0 T ≈ 127.7 MHz.
+
+Q5. During precession, which magnetization component changes direction?
+A. Longitudinal
+B. Transverse
+C. Net M₀
+D. B₀
+
+Correct answer: B
+Explanation: The transverse vector rotates as the proton precesses.
+
+Q6. Chemical shift arises because Larmor frequency depends on:
+A. Receiver bandwidth
+B. Slice gradient
+C. Local environment
+D. Flip angle
+
+Correct answer: C
+Explanation: Local electron shielding changes the effective magnetic field.
+
+Q7. Flip angle is proportional to:
+A. B₁ amplitude × duration
+B. B₀ strength
+C. TE
+D. Receiver gain
+
+Correct answer: A
+Explanation: Flip angle ∝ B₁t; stronger or longer pulses give larger flips.
+
+Q8. A 90° pulse mainly:
+A. Inverts M₀ along z
+B. Creates T₂* decay
+C. Refocuses phase
+D. Tips M₀ into transverse plane
+
+Correct answer: D
+Explanation: A 90° pulse converts longitudinal magnetization into transverse magnetization.
+
+Q9. T₁ relaxation describes:
+A. Loss of transverse coherence
+B. Longitudinal recovery
+C. Chemical shift
+D. Slice selection
+
+Correct answer: B
+Explanation: T₁ is spin-lattice relaxation and recovers longitudinal magnetization.
+
+Q10. T₂* includes T₂ decay plus:
+A. RF excitation
+B. Slice selection
+C. B₀ inhomogeneity dephasing
+D. Fourier transform
+
+Correct answer: C
+Explanation: T₂* is shorter than T₂ due to static field imperfections.
+
+Q11. Receiver coil detects signal from:
+A. Rotating transverse magnetization
+B. Static longitudinal Mz
+C. B₀ shim current
+D. Gradient coil current
+
+Correct answer: A
+Explanation: Changing flux from rotating transverse magnetization induces voltage.
+
+Q12. Spin echo refocusing uses:
+A. 90° pulse
+B. Gradient reversal
+C. Small flip angle
+D. 180° RF pulse
+
+Correct answer: D
+Explanation: A 180° pulse reverses phase ordering to form a spin echo.
+
+Q13. T1-weighted spin echo uses:
+A. Long TR, long TE
+B. Short TR, short TE
+C. Long TR, short TE
+D. Short TR, long TE
+
+Correct answer: B
+Explanation: Short TR emphasizes T₁ recovery; short TE limits T₂ decay.
+
+Q14. Gradient echo is sensitive to:
+A. T1 only
+B. Proton density only
+C. T2*
+D. Chemical shift only
+
+Correct answer: C
+Explanation: Gradient echo lacks 180° refocusing, so static offsets remain.
+
+Q15. Slice thickness depends on RF bandwidth and:
+A. Gradient strength
+B. TR
+C. Receiver phase
+D. Flip angle only
+
+Correct answer: A
+Explanation: Δz = BW/(γGz); stronger gradient gives thinner slice.
+
+Q16. Frequency encoding applies a readout gradient during:
+A. RF excitation
+B. Slice selection
+C. Phase encoding
+D. Signal recording
+
+Correct answer: D
+Explanation: The readout gradient labels x positions by precession frequency.
+
+Q17. One k-space sample describes:
+A. One pixel
+B. A whole-image phase pattern
+C. One slice position
+D. One receiver channel
+
+Correct answer: B
+Explanation: Each k-space sample contains contributions across the whole slice.
+
+Q18. 2D scan time is approximately:
+A. FOV × Δk
+B. TE × TR
+C. Ny × TR × averages
+D. B1 × duration
+
+Correct answer: C
+Explanation: One k-space line per TR gives time ≈ Ny × TR × averages.
+
+Q19. Field of view is set by:
+A. 1/Δk
+B. Δk × TR
+C. TE/T2
+D. γB₀
+
+Correct answer: A
+Explanation: k-space sample spacing determines FOV: FOV = 1/Δk.
+
+Q20. Wrap-around artifact is caused by:
+A. Long T1
+B. Large flip angle
+C. High SNR
+D. Small encoded FOV
+
+Correct answer: D
+Explanation: Signals outside a small FOV fold into the image.

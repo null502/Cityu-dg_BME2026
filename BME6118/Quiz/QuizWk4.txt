@@ -1,0 +1,160 @@
+Nuclear Imaging Part I: Applications Quiz
+Q1. Which tracer is used for bone repair activity in SPECT?
+A. 99mTc-MDP
+B. 18F-FDG
+C. 68Ga-PSMA-11
+D. 123I-ioflupane
+Correct answer: A
+Explanation: 99mTc-MDP reports mineral turnover and active bone remodeling.
+
+Q2. 99mTc-MDP uptake depends on binding to which bone component?
+A. Collagen fibers
+B. Hydroxyapatite crystals
+C. Mitochondrial membranes
+D. Somatostatin receptors
+Correct answer: B
+Explanation: MDP’s P-C-P backbone binds hydroxyapatite crystals in bone.
+
+Q3. In suspected spondylolysis, what does fused SPECT/CT add to planar bone scan?
+A. Glucose metabolism
+B. Dopamine transporter binding
+C. Anatomical localization of uptake
+D. Amyloid plaque burden
+Correct answer: C
+Explanation: SPECT/CT localizes increased MDP uptake within skeletal anatomy.
+
+Q4. A stress perfusion defect that improves at rest suggests which condition?
+A. Fixed scar
+B. Normal perfusion
+C. Pulmonary embolism
+D. Reversible ischemia
+Correct answer: D
+Explanation: A defect improving at rest supports reversible ischemia.
+
+Q5. Why does 99mTc-MIBI retain in viable myocardial cells?
+A. Binds hydroxyapatite
+B. Lipophilic cation and membrane potentials
+C. Binds PSMA active site
+D. Enters sodium-iodide symporter
+Correct answer: B
+Explanation: Lipophilic cation enters viable cells; membrane potentials support mitochondrial retention.
+
+Q6. Which tracers support PET myocardial perfusion imaging?
+A. 82Rb and 13N-ammonia
+B. 99mTc-MDP and 18F-NaF
+C. 68Ga-DOTATATE and 18F-FDG
+D. 123I-ioflupane and 99mTc-ECD
+Correct answer: A
+Explanation: 82Rb and 13N-ammonia support perfusion PET; dynamic PET can quantify flow.
+
+Q7. Ventilation-perfusion SPECT showing perfusion loss with preserved ventilation suggests?
+A. Myocardial ischemia
+B. Graves disease
+C. Pulmonary embolism
+D. Alzheimer's disease
+Correct answer: C
+Explanation: Q<V mismatch suggests pulmonary embolism from blocked lung blood flow.
+
+Q8. Technegas used for ventilation SPECT is an aerosol of what?
+A. 68Ga-PSMA-11
+B. 18F-FDG-6-phosphate
+C. 123I-ioflupane
+D. 99mTc-carbon nanoparticles
+Correct answer: D
+Explanation: Technegas is made by heating 99mTc in a carbon crucible.
+
+Q9. Brain perfusion SPECT with 99mTc-HMPAO shows reduced perfusion in areas affected by?
+A. Stroke
+B. Prostate cancer
+C. Thyroid nodule
+D. Bone fracture
+Correct answer: A
+Explanation: Brain perfusion SPECT measures blood flow; less perfusion could indicate stroke.
+
+Q10. During an epileptic seizure, ictal SPECT usually shows what in involved regions?
+A. Reduced hydroxyapatite
+B. Increased blood flow
+C. Increased PSMA binding
+D. Decreased amyloid plaques
+Correct answer: B
+Explanation: Ictal SPECT captures increased blood flow in involved brain regions.
+
+Q11. Diffuse increased thyroid uptake on pertechnetate scan most suggests?
+A. Autonomous nodule
+B. Thyroiditis
+C. Graves disease
+D. Toxic multinodular goiter
+Correct answer: C
+Explanation: Diffuse increase suggests Graves disease; check TSH receptor antibodies.
+
+Q12. 123I-ioflupane SPECT (DAT scan) binds which presynaptic target?
+A. Somatostatin receptor
+B. PSMA
+C. Sodium-iodide symporter
+D. Dopamine transporter
+Correct answer: D
+Explanation: It binds presynaptic dopamine transporter, marking dopamine nerve terminals.
+
+Q13. Which renal tracer is retained in cortex and shows cortical defects/scars?
+A. 99mTc-DMSA
+B. 99mTc-MAG3
+C. 99mTc-DTPA
+D. 99mTc-MDP
+Correct answer: A
+Explanation: DMSA shows cortical retention; MAG3 is tubular secretion; DTPA is filtration.
+
+Q14. Why does 18F-FDG-6-phosphate accumulate in cells?
+A. It binds hydroxyapatite
+B. It cannot proceed further in glycolysis
+C. It is excreted by kidneys immediately
+D. It binds PSMA active site
+Correct answer: B
+Explanation: Carbon-2 substitution limits downstream glycolysis, so FDG-6-phosphate accumulates.
+
+Q15. Which is a normal pattern on 18F-FDG PET?
+A. High hydroxyapatite uptake
+B. High PSMA in salivary glands only
+C. High brain cortex uptake
+D. No urinary excretion
+Correct answer: C
+Explanation: Brain cortex normally uses much glucose; kidneys and bladder show urinary excretion.
+
+Q16. In lymphoma response assessment, what does SUV quantify?
+A. Bone mineral density
+B. Pulmonary ventilation
+C. Thyroid hormone level
+D. Radiotracer concentration in a region
+Correct answer: D
+Explanation: SUV standardizes radioactivity concentration by injected dose and weight.
+
+Q17. PSMA is overexpressed on the surface of which cancer cells?
+A. Prostate cancer
+B. Thyroid cancer
+C. Neuroendocrine tumors
+D. Lymphoma
+Correct answer: A
+Explanation: PSMA is a prostate cell surface protease overexpressed in many prostate cancers.
+
+Q18. In 68Ga-PSMA-11, what does the urea moiety do?
+A. Binds hydroxyapatite
+B. Prevents cleavage by PSMA
+C. Coordinates 99mTc
+D. Enters sodium-iodide symporter
+Correct answer: B
+Explanation: Glu-urea-lys motif mimics substrate, but urea makes tracer uncleavable by PSMA.
+
+Q19. 68Ga-DOTATATE targets which receptor on neuroendocrine tumors?
+A. Dopamine transporter
+B. PSMA
+C. Somatostatin receptor SSTR2
+D. Sodium-iodide symporter
+Correct answer: C
+Explanation: Cyclic octreotate targets SSTR2, highly expressed on many neuroendocrine tumors.
+
+Q20. Which 18F-FDG PET pattern supports Alzheimer's disease?
+A. Frontal and anterior temporal changes
+B. Diffuse thyroid uptake
+C. Increased bone remodeling
+D. Temporoparietal hypometabolism
+Correct answer: D
+Explanation: Temporoparietal metabolic changes can support Alzheimer's disease.

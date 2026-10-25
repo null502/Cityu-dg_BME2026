@@ -1,0 +1,180 @@
+Nuclear Imaging Part II: Applications Quiz
+Q1. Which tracer reports active bone remodeling?
+A. 99mTc-MDP
+B. 18F-FDG
+C. 68Ga-PSMA-11
+D. 123I-flutemetamol
+
+Correct answer: A
+Explanation: 99mTc-MDP is a bisphosphonate tracer that binds hydroxyapatite during active bone remodeling.
+
+Q2. What does SPECT/CT add to bone imaging?
+A. Measures blood glucose
+B. Localizes uptake anatomically
+C. Measures lung ventilation
+D. Detects amyloid plaques
+
+Correct answer: B
+Explanation: SPECT/CT combines radiotracer uptake with anatomical localization in the skeleton.
+
+Q3. A stress perfusion defect improves at rest. What does this suggest?
+A. Permanent scar
+B. Normal perfusion
+C. Reversible ischemia
+D. Lung embolism
+
+Correct answer: C
+Explanation: A stress defect that improves at rest supports reversible myocardial ischemia.
+
+Q4. Which V/Q pattern suggests pulmonary embolism?
+A. Normal ventilation, normal perfusion
+B. Reduced ventilation, reduced perfusion
+C. Increased ventilation, increased perfusion
+D. Preserved ventilation, reduced perfusion
+
+Correct answer: D
+Explanation: Pulmonary embolism can cause regional perfusion loss while ventilation remains preserved.
+
+Q5. Which tracer is used for lung ventilation imaging?
+A. 99mTc aerosol
+B. 99mTc-MDP
+C. 18F-fluorodeoxyglucose
+D. 68Ga-DOTATATE
+
+Correct answer: A
+Explanation: Ventilation studies use 99mTc aerosol, such as Technegas, or 81mKr gas.
+
+Q6. What does “ictal” SPECT describe?
+A. Imaging between seizures
+B. Imaging during a seizure
+C. Imaging after chemotherapy
+D. Imaging during sleep
+
+Correct answer: B
+Explanation: Ictal means during a seizure; involved brain regions usually show increased blood flow.
+
+Q7. Which statement about 123I iodide is correct?
+A. It binds PSMA
+B. It remains outside thyroid cells
+C. It enters through the sodium-iodide symporter
+D. It measures bone turnover
+
+Correct answer: C
+Explanation: 123I iodide enters thyroid cells through the sodium-iodide symporter and contributes to hormone production.
+
+Q8. Which renal tracer mainly undergoes tubular secretion?
+A. 99mTc-DTPA
+B. 99mTc-DMSA
+C. 18F-FDG
+D. 99mTc-MAG3
+
+Correct answer: D
+Explanation: 99mTc-MAG3 is mainly handled by tubular secretion and assesses drainage and relative function.
+
+Q9. Why does 18F-FDG accumulate in many cells?
+A. It becomes trapped after phosphorylation
+B. It binds hydroxyapatite
+C. It targets PSMA
+D. It enters pulmonary vessels
+
+Correct answer: A
+Explanation: Hexokinase converts FDG into FDG-6-phosphate, which accumulates because further glycolysis is limited.
+
+Q10. Which normal tissue usually shows high 18F-FDG uptake?
+A. Cortical bone
+B. Brain cortex
+C. Thyroid cartilage
+D. Lung pleura
+
+Correct answer: B
+Explanation: The brain cortex normally uses substantial glucose and therefore commonly shows high FDG uptake.
+
+Q11. What does SUV represent in FDG PET?
+A. SPECT uptake volume
+B. Standard ventilation unit
+C. Standardized uptake value
+D. Scintillator uniformity value
+
+Correct answer: C
+Explanation: SUV is the standardized uptake value used to quantify radiotracer uptake.
+
+Q12. Which condition can cause false-positive FDG uptake?
+A. Low glucose use
+B. Reduced blood flow
+C. Normal bone turnover
+D. Infection or recent surgery
+
+Correct answer: D
+Explanation: Infection and recent surgery can produce intense FDG uptake and mimic active malignancy.
+
+Q13. What is PSMA commonly overexpressed in?
+A. Prostate cancer
+B. Thyroiditis
+C. Pulmonary embolism
+D. Alzheimer’s disease
+
+Correct answer: A
+Explanation: PSMA is overexpressed in many prostate cancers and provides a target for PET imaging.
+
+Q14. Why does the PSMA-11 targeting motif remain attached to PSMA?
+A. It is radioactive
+B. It cannot be cleaved
+C. It contains glucose
+D. It binds hydroxyapatite
+
+Correct answer: B
+Explanation: The Glu-urea-Lys motif mimics a substrate but cannot be cleaved by the PSMA enzyme.
+
+Q15. Which location can show normal PSMA-11 uptake?
+A. Cerebral ventricles
+B. Pulmonary alveoli
+C. Salivary glands
+D. Spinal discs
+
+Correct answer: C
+Explanation: Normal PSMA-11 uptake occurs in salivary glands, kidneys, and bowel.
+
+Q16. Which receptor is targeted by 68Ga-DOTATATE?
+A. Dopamine transporter
+B. PSMA
+C. Sodium-iodide symporter
+D. Somatostatin receptor 2
+
+Correct answer: D
+Explanation: DOTATATE targets SSTR2, which is highly expressed on many neuroendocrine tumors.
+
+Q17. What may high FDG uptake and low SSTR uptake indicate?
+A. A possible aggressive component
+B. A normal receptor-rich phenotype
+C. A completely benign lesion
+D. A reversible cardiac defect
+
+Correct answer: A
+Explanation: Low receptor expression with high glycolytic activity may indicate a more aggressive tumor component.
+
+Q18. Which FDG brain pattern can support Alzheimer’s disease?
+A. Isolated cerebellar uptake
+B. Temporoparietal hypometabolism
+C. Increased frontal metabolism
+D. Uniform cortical hypermetabolism
+
+Correct answer: B
+Explanation: Temporoparietal metabolic reduction can support an Alzheimer’s disease pattern.
+
+Q19. What does a positive amyloid PET scan generally show?
+A. Increased lung ventilation
+B. Reduced bone remodeling
+C. Reduced gray-white contrast
+D. Increased thyroid hormone production
+
+Correct answer: C
+Explanation: Amyloid plaque retention increases cortical uptake and reduces gray-white matter contrast.
+
+Q20. What limitation applies to a positive amyloid PET scan?
+A. It cannot image the brain
+B. It cannot detect cortical uptake
+C. It proves active infection
+D. It does not establish symptom cause
+
+Correct answer: D
+Explanation: Amyloid plaques can occur in cognitively normal older adults, so diagnosis requires clinical context and other findings.

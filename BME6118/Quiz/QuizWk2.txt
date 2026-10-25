@@ -1,0 +1,160 @@
+Radiology part I: X-rays Quiz
+Q1. What wavelength range characterizes X-rays?
+A. 400–750 nm
+B. 10^-11 to 10^-8 m
+C. 10^-6 to 10^-3 m
+D. 10^-3 to 1 m
+Correct answer: B
+Explanation: X-rays are electromagnetic waves with wavelengths from 10^-11 to 10^-8 m.
+
+Q2. Which relation gives X-ray photon energy?
+A. E = IR
+B. E = mg
+C. E = 1/2kx^2
+D. E = hf
+Correct answer: D
+Explanation: Planck relation E = hf defines photon energy from frequency.
+
+Q3. In an X-ray tube, about what percentage becomes X-rays?
+A. 99%
+B. 50%
+C. 1%
+D. 10%
+Correct answer: C
+Explanation: About 99% becomes heat; only about 1% becomes X-rays.
+
+Q4. Bremsstrahlung radiation arises when electrons do what at the anode?
+A. Decelerate and emit X-rays
+B. Refill inner-shell vacancies
+C. Ionize water molecules
+D. Annihilate with positrons
+Correct answer: A
+Explanation: Bremsstrahlung is braking radiation from decelerating electrons.
+
+Q5. Characteristic X-ray energy equals which difference?
+A. Incident minus binding energy
+B. Outer-shell energy minus inner-shell energy
+C. Inner-shell energy minus outer-shell energy
+D. Incident electron energy only
+Correct answer: B
+Explanation: Characteristic photon energy equals outer-shell minus inner-shell energy.
+
+Q6. Why do mammograms use very low kV?
+A. To penetrate thick bone
+B. To increase tube heat
+C. To shorten exposure time
+D. To enhance soft-tissue contrast
+Correct answer: D
+Explanation: Low kV improves contrast in soft breast tissue without bone.
+
+Q7. Which low-energy interaction changes photon direction without energy loss?
+A. Photoelectric effect
+B. Compton scattering
+C. Rayleigh scattering
+D. Pair production
+Correct answer: C
+Explanation: Rayleigh scattering is elastic and changes direction only.
+
+Q8. What is the main source of contrast in X-ray images?
+A. Photoelectric effect
+B. Rayleigh scattering
+C. Pair production
+D. Compton scatter only
+Correct answer: A
+Explanation: Photoelectric absorption is the main source of X-ray image contrast.
+
+Q9. In Compton scattering, the scattered photon has what energy?
+A. Equal to incident
+B. Greater than incident
+C. Zero energy
+D. Lower than incident
+Correct answer: D
+Explanation: Compton scattering transfers energy to an electron, lowering photon energy.
+
+Q10. At 45 keV in bone, which interactions contribute?
+A. Rayleigh only
+B. Photoelectric and Compton
+C. Pair production only
+D. No interaction
+Correct answer: B
+Explanation: At 45 keV, bone shows both photoelectric and Compton contributions.
+
+Q11. Which equation describes X-ray attenuation through thickness d?
+A. Iout = Iin + μd
+B. Iout = Iin e^μd
+C. Iout = Iin e^−μd
+D. Iout = Iin/μd
+Correct answer: C
+Explanation: Transmission follows Iout = Iin e^−μd for linear coefficient μ.
+
+Q12. Mass attenuation coefficient equals linear coefficient divided by what?
+A. Density
+B. Atomic number
+C. Photon energy
+D. Thickness
+Correct answer: A
+Explanation: Mass attenuation coefficient is linear coefficient divided by density.
+
+Q13. Indirect biological X-ray effects mainly involve what?
+A. Direct DNA ionization
+B. Pair production
+C. Heat only
+D. Water free radicals
+Correct answer: D
+Explanation: X-rays ionize water, producing free radicals that damage molecules.
+
+Q14. Stochastic radiation effects are characterized by what?
+A. Threshold dose
+B. Probability increasing with dose
+C. Severity increasing with dose
+D. No cancer risk
+Correct answer: B
+Explanation: Stochastic effects have no assumed threshold; probability rises with dose.
+
+Q15. ALARA stands for what?
+A. As low as reasonably achievable
+B. All levels are radiation absorbed
+C. Avoid all radiation always
+D. Amplify low attenuation
+Correct answer: A
+Explanation: ALARA means keeping radiation dose as low as reasonably achievable.
+
+Q16. An indirect flat-panel detector first converts X-rays into what?
+A. Electrical charge directly
+B. Sound
+C. Visible light
+D. Heat
+Correct answer: C
+Explanation: Scintillator converts X-rays to light before photodiode readout.
+
+Q17. Which material is used as a photoconductor in direct detection?
+A. CsI scintillator
+B. Photodiode
+C. Image intensifier
+D. Amorphous selenium
+Correct answer: D
+Explanation: Amorphous selenium directly converts X-rays into electron-hole pairs.
+
+Q18. DQE compares which quantities?
+A. Dose to voltage
+B. Output SNR squared to input SNR squared
+C. Pixel size to matrix
+D. Light to heat
+Correct answer: B
+Explanation: DQE is output SNR squared divided by input SNR squared.
+
+Q19. Fluoroscopy requires which detector property?
+A. Fast readout
+B. Very low kV only
+C. No contrast agent
+D. Single static image
+Correct answer: A
+Explanation: Dynamic fluoroscopy needs fast readout for multiple images over time.
+
+Q20. Which contrast agent is used for gastrointestinal X-rays?
+A. Iodinated intravenous agent
+B. Amorphous selenium
+C. Barium sulfate
+D. Technetium-99m
+Correct answer: C
+Explanation: Barium sulfate drink is used for esophagus and gastrointestinal imaging.

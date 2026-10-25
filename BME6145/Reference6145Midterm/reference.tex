@@ -1,0 +1,278 @@
+% !TEX recipe = latexmk (xelatex)
+% !TEX program = xelatex
+\documentclass[10pt,a4paper]{ctexart}
+
+% Compile with XeLaTeX. Compact two-column lecture summary.
+\usepackage[a4paper,margin=0.30in,includeheadfoot]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{multicol}
+\usepackage{booktabs,tabularx,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\small\thepage}
+\setlength{\headheight}{5pt}
+\setlength{\headsep}{2pt}
+\setlength{\footskip}{12pt}
+\setlength{\columnsep}{0.14in}
+\setlength{\columnseprule}{0.2pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5pt}
+\linespread{0.91}
+\emergencystretch=2em
+\AtBeginDocument{\fontsize{10pt}{9.1pt}\selectfont}
+
+\titleformat{\section}{\normalsize\bfseries\color{blue!55!black}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{2pt}{0.5pt}
+\titleformat{\subsection}{\normalsize\bfseries\color{black!75}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{1.5pt}{0pt}
+\titleformat{\subsubsection}{\small\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{1pt}{0pt}
+\setlist{nosep,leftmargin=*,topsep=0.5pt,partopsep=0pt}
+\setlist[itemize]{label=\textbullet}
+\setlist[enumerate]{label=\arabic*.,labelsep=0.3em}
+
+\newcommand{\key}[1]{\textbf{#1}}
+\newcommand{\formula}[1]{%
+  \par\vspace{1pt}\begingroup
+  \setlength{\abovedisplayskip}{0pt}\setlength{\belowdisplayskip}{0pt}
+  \[ #1 \]\endgroup\vspace{1pt}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{document}
+\begin{multicols*}{2}
+\sloppy
+
+\section{1. AI Foundations and Biomedical Context}
+\subsection{Course map and central idea}
+\begin{itemize}
+  \item \key{Artificial Intelligence (AI)} aims to perform tasks associated with intelligence; 
+  \key{machine learning (ML)} learns patterns from data; \key{neural networks (NNs)} are trainable layered function approximators; 
+  \key{deep learning} uses many layers; \key{generative AI} produces new content from learned distributions.
+  \item The modern workflow is \key{training} on examples followed by \key{inference} on new inputs. 
+  Scaling usually means more data, parameters and compute.
+  \item \key{Evolution of neural networks:} McCulloh \& Piits Neuron(1943); Perceptron(1957); 
+  Multilayer perceptron/Backpropagation(1986); Convolutional neural networks(1989); Alexnet(2012); Transformers(2017).
+  \item Course progression: foundations \(\rightarrow\) Python and learning paradigms \(\rightarrow\) supervised learning 
+  \(\rightarrow\) NNs \(\rightarrow\) deep learning/CNNs \(\rightarrow\) language models and Transformers.
+\end{itemize}
+
+\subsection{Two traditions of AI}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}lYY@{}}
+\toprule
+Approach & Core belief & Typical methods\\ \midrule
+Knowledge engineering & Intelligence is encoded explicitly as facts, rules and logic & Expert systems, symbolic reasoning, hand-crafted features\\
+Statistical learning & Intelligence emerges from statistical patterns in data at scale & Regression, probabilistic models, NNs, hidden Markov models\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\begin{itemize}
+  \item Rule-based systems are interpretable but expensive to author and maintain. 
+  Statistical learning scales better with data and computing, but depends on data quality, objectives and validation.
+  \item Other computational-intelligence methods include genetic algorithms, particle swarm optimization and simulated annealing.
+\end{itemize}
+
+\subsection{AI development milestones}
+\begin{itemize}
+  \item Artificial neurons abstract biological neurons as weighted input summation plus an activation. 
+  Stacked neurons can approximate complex functions.
+  \item Backpropagation made multilayer-network training practical. \key{AlexNet (2012)} demonstrated the impact of large labeled 
+  datasets and GPUs; \key{Transformers (2017)} enabled efficient long-range sequence modeling; \key{ChatGPT (2022)} accelerated 
+  public adoption of generative AI.
+  \item Progress is not only an algorithmic story: internet-scale data, specialized hardware and larger models are major drivers.
+\end{itemize}
+
+\subsection{Biomedical applications and limits}
+\begin{itemize}
+  \item AI can support imaging, diagnosis, prognosis, drug discovery, genomics, protein/DNA modeling and personalized therapy. 
+  It should be treated as a tool within a validated clinical workflow, not as a substitute for domain expertise.
+  \item \key{Personalized mRNA cancer vaccine}: tumor and blood samples are sequenced to identify 
+  patient-specific mutations (neoantigens); algorithms help rank targets and optimize mRNA design. 
+  The therapy stimulates T cells against residual tumor cells and was combined with an immune-checkpoint inhibitor.
+  \item AI did not independently invent the vaccine or cure cancer. Biology, clinical trials, 
+  manufacturing and safety validation remain essential.
+  \item mRNA design targets codon usage, UTRs, poly(A)-tail length and capping to improve stability, 
+  translation and protein expression; lipid nanoparticles deliver the mRNA.
+  \item \key{Eroom's law}:  indicates the number of new drugs approved per billion US dollars spent on R\&D has halved roughly 
+  every nine years since 1950 despite improving technology, drug development has historically become slower and more expensive. 
+  AI may improve parts of the pipeline, but it is not a magic wand.
+\end{itemize}
+
+\subsection{Practical and ethical principles}
+\begin{itemize}
+  \item Use AI as a tutor/collaborator only when allowed; never use it in exams or submit work that cannot be reproduced and explained.
+  \item Biomedical models require representative data, correct labels, leakage prevention, external validation, calibration, robustness checks, interpretability where appropriate, privacy protection and human oversight.
+\end{itemize}
+
+\section{2. Learning Paradigms and Python}
+\subsection{Supervised versus unsupervised learning}
+\begin{itemize}
+  \item \key{Supervised learning}: each input has a target label. Learn \(f:x\mapsto y\), then predict labels for unseen inputs.
+  \item \key{Regression}: \(y\) is continuous (e.g., predict blood glucose from BMI). \key{Classification}: \(y\) is categorical (e.g., Type 1 versus Type 2 diabetes).
+  \item \key{Unsupervised learning}: inputs are unlabeled; the model discovers structure such as clusters, similarity or low-dimensional representations.
+\end{itemize}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}lYY@{}}
+\toprule
+Question & Supervised & Unsupervised\\ \midrule
+Training signal & Known correct answers & No target answers\\
+Typical output & Prediction/class label & Structure, clusters or representation\\
+Biomedical example & Glucose prediction, tumor classification & Patient subtypes or cell-state clusters\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Python and Jupyter}
+\begin{itemize}
+  \item Python is interpreted rather than compiled, but dominates AI research because of its open ecosystem and mature scientific packages.
+  \item Package organization is commonly \texttt{package > module > class/function}; capabilities are added with \texttt{import}.
+  \item A Jupyter notebook (\texttt{.ipynb}) combines executable code, Markdown notes and saved outputs. Cells can be run incrementally, but execution order matters.
+  \item Conda/Mamba manage isolated environments: each project can have its own Python interpreter and packages, preventing dependency conflicts.
+\end{itemize}
+\key{Lab habit:} inspect data, document assumptions, set random seeds where appropriate, separate training and test data, and keep the computational environment reproducible.
+
+\section{3. Supervised Learning}
+\subsection{Linear regression}
+\begin{itemize}
+  \item Model a continuous response with a line: \(\hat y=f(x)=wx+b\). Here \(w\) is the slope and \(b\) the intercept.
+  \item For sample \(i\), error is \(E^{(i)}=\hat y^{(i)}-y^{(i)}\). A common objective is mean squared error (MSE):
+\end{itemize}
+\formula{J(w,b)=\frac{1}{2m}\sum_{i=0}^{m-1}\left(f(x^{(i)})-y^{(i)}\right)^2.}
+\begin{itemize}
+  \item Training chooses \(w,b\) to minimize \(J\). Ordinary least squares has a closed-form solution for basic linear regression; gradient descent provides an iterative alternative and generalizes to larger models.
+\end{itemize}
+
+\subsection{Gradient descent}
+\begin{itemize}
+  \item The gradient gives the direction and rate of increase of cost. Move in the opposite direction:
+\end{itemize}
+\formula{\begin{aligned}
+w_{t+1}&=w_t-\alpha\frac{\partial J}{\partial w},&
+b_{t+1}&=b_t-\alpha\frac{\partial J}{\partial b}.
+\end{aligned}}
+\begin{itemize}
+  \item \(\alpha\) is the learning rate. Too small gives slow training; too large can overshoot, diverge or oscillate. With a suitable \(\alpha\), the cost decreases toward a minimum.
+  \item Generic loop: initialize parameters \(\rightarrow\) compute predictions, cost and gradients \(\rightarrow\) update parameters \(\rightarrow\) repeat until a stopping criterion.
+\end{itemize}
+
+\subsection{Logistic regression and classification}
+\begin{itemize}
+  \item A linear score is converted to a probability with the sigmoid:
+\end{itemize}
+\formula{z=w^\top x+b,\qquad \sigma(z)=\frac{1}{1+e^{-z}}.}
+\begin{itemize}
+  \item Threshold the predicted probability to obtain a class. Binary classification commonly uses cross-entropy (log loss), which strongly penalizes confident wrong predictions:
+\end{itemize}
+\formula{L=-\left[y\log\hat y+(1-y)\log(1-\hat y)\right].}
+\begin{itemize}
+  \item Logistic regression is a single artificial neuron: weighted sum plus bias, followed by a nonlinear activation. Decision boundaries are linear in the input features.
+\end{itemize}
+
+\section{4. Neural Networks}
+\subsection{Artificial neuron and perceptron}
+\begin{itemize}
+  \item A biological neuron receives signals through dendrites, integrates them in the soma and sends an action potential through the axon. An artificial neuron simplifies this to
+\end{itemize}
+\formula{z=\sum_j w_jx_j+b,\qquad \hat y=g(z).}
+\begin{itemize}
+  \item A perceptron learns weights from prediction errors and can implement AND and OR logic. It can separate only \key{linearly separable} classes with one hyperplane.
+  \item XOR is not linearly separable: no single straight decision boundary correctly separates its four input combinations. This motivates hidden layers.
+\end{itemize}
+
+\subsection{Multilayer perceptron (MLP)}
+\begin{itemize}
+  \item Neurons form layers: input \(\rightarrow\) hidden layer(s) \(\rightarrow\) output. Hidden layers transform features so that nonlinear decision boundaries become learnable.
+  \item \key{Forward propagation}: pass inputs through each layer to obtain \(\hat y\). Compute loss/cost from predictions.
+  \item \key{Backpropagation}: apply the chain rule from output to input to obtain gradients for all weights and biases, then update them with gradient descent. Frameworks such as Keras and PyTorch calculate gradients automatically.
+\end{itemize}
+\formula{\text{forward pass}\rightarrow\text{loss}\rightarrow\text{backward pass}\rightarrow\text{parameter update}.}
+
+\subsection{Breast-cancer classification lab}
+\begin{itemize}
+  \item Inputs are cell-nucleus measurements extracted from biopsy images; targets are benign or malignant.
+  \item Compare a single-layer perceptron (equivalent to logistic regression for binary classification) with a one-hidden-layer network.
+  \item Split data into training and test sets. Standardize features so differing numerical scales do not let one feature dominate optimization.
+  \item A hidden layer can improve accuracy by learning nonlinear feature combinations, but more capacity also increases overfitting risk. Evaluate on unseen data.
+\end{itemize}
+
+\section{5. Deep Learning and Convolution}
+\subsection{Activations and deep representations}
+\begin{itemize}
+  \item Deep networks stack layers to learn hierarchical representations: early layers detect simple patterns; later layers combine them into abstract features.
+  \item Sigmoid saturates at large positive/negative inputs, producing near-zero gradients. ReLU is
+\end{itemize}
+\formula{\operatorname{ReLU}(z)=\max(0,z)}
+\begin{itemize}
+  \item ReLU responds to positive inputs with a nonzero linear gradient and is generally easier to optimize in deep networks.
+\end{itemize}
+
+\subsection{Convolutional neural networks (CNNs)}
+\begin{itemize}
+  \item Dense layers connect every input to every hidden unit. CNNs replace this with \key{sparse local connections}, reducing parameters and exploiting local structure.
+  \item A kernel/filter slides across an input and computes a local dot product, producing a feature map. Kernels are \key{shared weights}: the same learned filter detects a pattern at different positions.
+  \item Stacked layers build representations from edges/lines to textures/shapes to cells and tissue morphology. This matches the visual pathway, where neurons respond to local features and progressively more complex combinations.
+\end{itemize}
+\formula{\text{feature map position}=\sum_{\text{local patch}}(\text{input value})(\text{kernel weight})+\text{bias}.}
+\begin{itemize}
+  \item CNNs are parameter-efficient and well suited to images, microscopy, spatial signals and short local motifs in sequences.
+\end{itemize}
+
+\subsection{Deep learning in genomics}
+\begin{itemize}
+  \item DNA is sequence data; one-hot encoding represents \(A,C,G,T\) as basis vectors. A 1D CNN can scan a sequence for local motifs such as regulatory patterns.
+  \item The main lesson is to match architecture to data structure: convolution captures local motifs, while sequence models are needed when distant positions interact.
+\end{itemize}
+
+\section{6. Language Models and Transformers}
+\subsection{Why sequences are different}
+\begin{itemize}
+  \item Order matters in text, speech, DNA, proteins and time series; sequences may have variable length and long-range dependencies.
+  \item MLPs do not naturally represent order. CNNs capture local context, but a distant dependency may require many layers and a long receptive-field path.
+  \item Example: in ``Dr. Alvarez ... finally \(\_\_\) awarded'', the verb must agree with the distant singular subject ``Alvarez'', not nearby plural distractors.
+\end{itemize}
+
+\subsection{Transformer input representation}
+\begin{enumerate}
+  \item \key{Tokenization}: split input into words, subwords, amino acids, nucleotides or \(k\)-mers. DNA may use single bases (\(k=1\)) or fixed-length \(k\)-mers.
+  \item \key{Token embedding}: map token IDs to learned dense vectors. Unlike one-hot vectors, embeddings can encode useful relationships.
+  \item \key{Positional encoding}: add position information because attention alone does not preserve order.
+  \item The resulting order-aware vectors enter the Transformer layers.
+\end{enumerate}
+
+\subsection{Self-attention}
+\begin{itemize}
+  \item For each token, Query \(Q\), Key \(K\) and Value \(V\) vectors are computed. A query compares with all keys to obtain relevance weights, then forms a weighted sum of values:
+\end{itemize}
+\formula{\operatorname{Attention}(Q,K,V)=
+\operatorname{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V.}
+\begin{itemize}
+  \item Every token can directly attend to every other token, so a long-range relationship can be modeled in one attention hop. Transformer layers pair attention with a feed-forward network; stacking layers builds richer representations.
+  \item Unlike recurrent models, attention can process positions in parallel during training. The trade-off is high memory/computational cost for very long sequences.
+\end{itemize}
+
+\subsection{Biomedical sequence models}
+\begin{itemize}
+  \item Transformers power large language models and also apply to proteins, DNA, audio, video and time series.
+  \item A DNA language model can be trained to predict a masked or next token and then fine-tuned for tasks such as promoter prediction. A protein model can tokenize amino acids plus special start/end tokens.
+  \item Architecture selection: CNNs are efficient for local motifs; self-attention is effective for interactions across long genomic or biological sequences.
+\end{itemize}
+
+\section{7. Exam and Project Checklist}
+\begin{itemize}
+  \item Distinguish AI, ML, NN, deep learning and generative AI; distinguish supervised regression, supervised classification and unsupervised learning.
+  \item Be able to write and interpret \(y=wx+b\), MSE, sigmoid, cross-entropy, gradient-descent updates, ReLU and attention.
+  \item Explain why a perceptron handles AND/OR but not XOR; how hidden layers solve nonlinear separation; and how forward propagation/backpropagation train an MLP.
+  \item Explain CNN locality and weight sharing, receptive fields and the biological inspiration of hierarchical visual features.
+  \item Explain tokenization, embeddings, positional encoding, \(Q/K/V\) attention and why Transformers handle long-range dependencies.
+  \item For any biomedical AI claim, ask: What is the biological target? What data and labels are used? What is the split and baseline? How is leakage prevented? Which metric and external validation support the claim? What are failure modes and clinical consequences?
+\end{itemize}
+
+\end{multicols*}
+\end{document}

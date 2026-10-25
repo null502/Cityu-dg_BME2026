@@ -1,0 +1,160 @@
+Radiology part II: CT Quiz
+Q1. What does CT add to conventional radiography?
+A. Single projection only
+B. Many-angle projections reconstruct 3D attenuation
+C. No need for detectors
+D. Only bone images
+Correct answer: B
+Explanation: CT reconstructs attenuation in each voxel from many angular projections.
+
+Q2. A CT detector reading measures what along one ray?
+A. Attenuation at one point
+B. Photon energy spectrum
+C. Total attenuation line integral
+D. Detector blur only
+Correct answer: C
+Explanation: Each reading is a line integral of attenuation along the X-ray path.
+
+Q3. Why does CT need projections from many angles?
+A. To reduce patient dose
+B. To remove all noise
+C. To increase tube voltage
+D. To recover missing spatial information
+Correct answer: D
+Explanation: Angular diversity provides spatial information lost in single line integrals.
+
+Q4. Which equation gives total attenuation p?
+A. p = −ln(I/I0)
+B. p = I/I0
+C. p = I0/I
+D. p = e^(−I/I0)
+Correct answer: A
+Explanation: p equals negative natural log of detected over unattenuated intensity.
+
+Q5. Which material has negative Hounsfield units?
+A. Water
+B. Fat
+C. Cortical bone
+D. Iodinated contrast
+Correct answer: B
+Explanation: Fat is negative HU; water is 0 and bone is positive.
+
+Q6. What does a narrow CT window improve?
+A. Radiation dose
+B. Z-axis resolution
+C. Soft-tissue contrast
+D. Metal artifact removal
+Correct answer: C
+Explanation: Narrow window width improves contrast among similar soft tissues.
+
+Q7. Why filter the sinogram before backprojection?
+A. Reduce blurring
+B. Increase pitch
+C. Lower Hounsfield units
+D. Remove patient motion
+Correct answer: A
+Explanation: Filtered backprojection applies a sharpening filter to reduce blurring.
+
+Q8. Too few angular views in CT produce?
+A. Beam hardening
+B. Partial volume
+C. Photon counting
+D. Peripheral streaks
+Correct answer: D
+Explanation: Too few views produce streaks; too few detector samples cause aliasing.
+
+Q9. Helical CT combines continuous gantry rotation with?
+A. Stationary table
+B. Continuous table motion
+C. Step-and-shoot motion
+D. No detector motion
+Correct answer: B
+Explanation: Source traces a helix as table moves continuously.
+
+Q10. What does higher helical pitch generally do?
+A. Improves longitudinal sampling
+B. Increases photons per slice
+C. Covers anatomy faster
+D. Removes motion artifacts
+Correct answer: C
+Explanation: Higher pitch covers anatomy faster but may reduce longitudinal sampling.
+
+Q11. Multi-slice CT uses multiple detector rows to acquire?
+A. One slice per rotation
+B. No slice images
+C. Only cone-beam dental images
+D. Several slices per rotation
+Correct answer: D
+Explanation: Multiple rows acquire several slices per rotation, shortening exams.
+
+Q12. Cone-beam CT commonly uses what geometry?
+A. 3D cone beam and 2D detector
+B. Parallel beam only
+C. Single detector row
+D. No reconstruction
+Correct answer: A
+Explanation: Cone-beam CT captures a larger volume per rotation; common in dental imaging.
+
+Q13. In an energy-integrating detector, photodiode converts light into?
+A. X-rays
+B. Heat
+C. Electrical charge
+D. Photons
+Correct answer: C
+Explanation: Scintillator converts X-rays to light; photodiode converts light to charge.
+
+Q14. Photon-counting CT uses energy thresholds to?
+A. Blur the sinogram
+B. Increase pitch
+C. Window images only
+D. Sort photons into bins
+Correct answer: D
+Explanation: Energy thresholds sort individual photons into bins for spectral information.
+
+Q15. Why use diastolic phase for cardiac CT?
+A. Heart is less mobile
+B. Contrast is absent
+C. Bone is denser
+D. Dose is zero
+Correct answer: A
+Explanation: Diastolic phase reduces coronary motion blur.
+
+Q16. Perfusion CT follows what through tissue over time?
+A. Air bolus
+B. Iodinated contrast
+C. FDG
+D. Bone mineral
+Correct answer: B
+Explanation: Repeated images track iodinated contrast; time-attenuation curves are analyzed.
+
+Q17. Dual-energy CT can separate which pair with similar HU?
+A. Air and water
+B. Muscle and fat
+C. Metal and air
+D. Iodine and bone
+Correct answer: D
+Explanation: Iodine, calcium, and water have distinct spectral signatures at two energies.
+
+Q18. Beam hardening causes which CT artifact?
+A. Stair-step artifact
+B. Motion blur
+C. Cupping and dark bands
+D. Partial volume
+Correct answer: C
+Explanation: Low-energy photons are absorbed preferentially, producing cupping and dark bands.
+
+Q19. What does a CT voxel report in partial-volume effect?
+A. Average attenuation of materials inside
+B. Only bone attenuation
+C. Only air attenuation
+D. Exact photon count
+Correct answer: A
+Explanation: Voxel averages all materials; small structures may disappear or have biased HU.
+
+Q20. Non-contrast head CT rapidly detects which condition?
+A. Amyloid plaques
+B. Acute hemorrhage
+C. Lung nodules
+D. Prostate cancer
+Correct answer: B
+Explanation: Non-contrast CT rapidly detects acute blood and mass effect in trauma.
