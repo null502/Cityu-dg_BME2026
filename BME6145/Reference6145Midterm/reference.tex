@@ -57,7 +57,7 @@
   \key{deep learning} uses many layers; \key{generative AI} produces new content from learned distributions.
   \item The modern workflow is \key{training} on examples followed by \key{inference} on new inputs. 
   Scaling usually means more data, parameters and compute.
-  \item \key{Evolution of neural networks:} McCulloh \& Piits Neuron(1943); Perceptron(1957); 
+  \item \key{Evolution of neural networks:} McCulloch \& Pitts neuron (1943); perceptron (1957); 
   Multilayer perceptron/Backpropagation(1986); Convolutional neural networks(1989); Alexnet(2012); Transformers(2017).
   \item Course progression: foundations \(\rightarrow\) Python and learning paradigms \(\rightarrow\) supervised learning 
   \(\rightarrow\) NNs \(\rightarrow\) deep learning/CNNs \(\rightarrow\) language models and Transformers.
@@ -98,10 +98,15 @@ Statistical learning & Intelligence emerges from statistical patterns in data at
   The therapy stimulates T cells against residual tumor cells and was combined with an immune-checkpoint inhibitor.
   \item AI did not independently invent the vaccine or cure cancer. Biology, clinical trials, 
   manufacturing and safety validation remain essential.
+  \item A recurrence-free-survival result after surgery in patients who already have melanoma
+  does not show that the vaccine prevents cancer in healthy people. Melanoma also has a relatively
+  high mutation burden and responds well to immunotherapy, so success cannot be assumed for
+  colorectal, breast or lung cancer without further evidence.
   \item mRNA design targets codon usage, UTRs, poly(A)-tail length and capping to improve stability, 
   translation and protein expression; lipid nanoparticles deliver the mRNA.
-  \item \key{Eroom's law}:  indicates the number of new drugs approved per billion US dollars spent on R\&D has halved roughly 
-  every nine years since 1950 despite improving technology, drug development has historically become slower and more expensive. 
+  \item \key{Eroom's law}: the number of new drugs approved per billion US dollars spent on R\&D has halved roughly 
+  every nine years since 1950 despite improving technology. This is the reverse of \key{Moore's law},
+  in which computing capability has grown rapidly; drug development has historically become slower and more expensive.
   AI may improve parts of the pipeline, but it is not a magic wand.
 \end{itemize}
 
@@ -112,6 +117,13 @@ Statistical learning & Intelligence emerges from statistical patterns in data at
 \end{itemize}
 
 \section{2. Learning Paradigms and Python}
+\subsection{Structure of AI training}
+\begin{itemize}
+  \item \key{Training} usually involves two ways, One encodes rules by hand, as in expert systems. 
+  The other lets models learn patterns from data. The latter approach underlies most modern AI models.
+  \item One trend in the evolution of AI is scaling up: more training data; more model parameters; more computing resources for training.
+\end{itemize}
+
 \subsection{Supervised versus unsupervised learning}
 \begin{itemize}
   \item \key{Supervised learning}: each input has a target label. Learn \(f:x\mapsto y\), then predict labels for unseen inputs.
@@ -138,6 +150,7 @@ Biomedical example & Glucose prediction, tumor classification & Patient subtypes
 \end{itemize}
 \key{Lab habit:} inspect data, document assumptions, set random seeds where appropriate, separate training and test data, and keep the computational environment reproducible.
 
+
 \section{3. Supervised Learning}
 \subsection{Linear regression}
 \begin{itemize}
@@ -160,6 +173,10 @@ b_{t+1}&=b_t-\alpha\frac{\partial J}{\partial b}.
 \begin{itemize}
   \item \(\alpha\) is the learning rate. Too small gives slow training; too large can overshoot, diverge or oscillate. With a suitable \(\alpha\), the cost decreases toward a minimum.
   \item Generic loop: initialize parameters \(\rightarrow\) compute predictions, cost and gradients \(\rightarrow\) update parameters \(\rightarrow\) repeat until a stopping criterion.
+  \item On a convex linear-regression cost surface, training from different initial \(w,b\) values
+  converges to the same global minimum when the learning rate is suitable: the cost decreases over
+  iterations and the parameter path moves downhill on the cost surface. A large learning rate can
+  oscillate or diverge; a small one converges slowly.
 \end{itemize}
 
 \subsection{Logistic regression and classification}
@@ -174,6 +191,8 @@ b_{t+1}&=b_t-\alpha\frac{\partial J}{\partial b}.
 \begin{itemize}
   \item Logistic regression is a single artificial neuron: weighted sum plus bias, followed by a nonlinear activation. Decision boundaries are linear in the input features.
 \end{itemize}
+\makebox[\linewidth][c]{\includegraphics[width=0.25\textwidth]{(Non)linearOperation.png}}
+
 
 \section{4. Neural Networks}
 \subsection{Artificial neuron and perceptron}
@@ -202,6 +221,7 @@ b_{t+1}&=b_t-\alpha\frac{\partial J}{\partial b}.
   \item A hidden layer can improve accuracy by learning nonlinear feature combinations, but more capacity also increases overfitting risk. Evaluate on unseen data.
 \end{itemize}
 
+
 \section{5. Deep Learning and Convolution}
 \subsection{Activations and deep representations}
 \begin{itemize}
@@ -229,6 +249,17 @@ b_{t+1}&=b_t-\alpha\frac{\partial J}{\partial b}.
   \item DNA is sequence data; one-hot encoding represents \(A,C,G,T\) as basis vectors. A 1D CNN can scan a sequence for local motifs such as regulatory patterns.
   \item The main lesson is to match architecture to data structure: convolution captures local motifs, while sequence models are needed when distant positions interact.
 \end{itemize}
+
+\subsection{AlexNet and the modern deep-learning turning point}
+\begin{itemize}
+  \item AlexNet's 2012 ImageNet result marked a practical turning point for deep learning. Its success depended
+  on \key{large-scale labeled data} (ImageNet), \key{GPUs} that made training feasible, and a
+  \key{CNN architecture} that exploited image locality and shared weights.
+  \item Deep networks learn increasingly abstract hierarchical representations, while CNNs achieve this
+  with far fewer parameters than fully connected networks. Their limitation is that small kernels
+  capture local patterns and require depth to connect distant positions.
+\end{itemize}
+
 
 \section{6. Language Models and Transformers}
 \subsection{Why sequences are different}
@@ -264,13 +295,51 @@ b_{t+1}&=b_t-\alpha\frac{\partial J}{\partial b}.
   \item Architecture selection: CNNs are efficient for local motifs; self-attention is effective for interactions across long genomic or biological sequences.
 \end{itemize}
 
-\section{7. Exam and Project Checklist}
+
+\section{7. Unsupervised Learning and Generation}
+\subsection{Principal component analysis (PCA)}
+\begin{itemize}
+  \item PCA finds orthogonal linear directions (principal components) that maximize projected variance,
+  without using labels. The first component captures the greatest variance; later components capture
+  the greatest remaining variance subject to orthogonality.
+  \item Projecting samples onto the first few components gives a low-dimensional representation for
+  visualization and compression. The retained components explain a fraction of the total variance;
+  discarded components cause reconstruction error.
+  \item In biomedical data, many correlated measurements (e.g., thousands of RNA-seq gene features)
+  can often be summarized by a few PC scores. PCA is linear, so it may miss curved or branching
+  nonlinear structure such as cell-differentiation trajectories.
+\end{itemize}
+
+\subsection{Autoencoders and latent spaces}
+\begin{itemize}
+  \item An autoencoder learns \(\text{input}\to\text{encoder}\to\text{latent bottleneck}\to\text{decoder}\to\text{reconstruction}\).
+  The input is also the training target, so labels are not required.
+  \item The latent space is a learned, generally nonlinear low-dimensional representation; the decoder
+  reconstructs the original profile. Compared with PCA, an autoencoder can represent nonlinear
+  patterns, but a standard autoencoder's latent space is not necessarily organized for freely
+  generating realistic new samples.
+\end{itemize}
+
+\subsection{Autoregressive generation}
+\begin{itemize}
+  \item A Transformer can generate a sequence by predicting the next token from the prefix,
+  appending the prediction, and repeating. Causal (masked) self-attention prevents a position
+  from using future tokens, making next-token prediction self-supervised.
+\end{itemize}
+
+
+\section{8. Exam and Project Checklist}
 \begin{itemize}
   \item Distinguish AI, ML, NN, deep learning and generative AI; distinguish supervised regression, supervised classification and unsupervised learning.
   \item Be able to write and interpret \(y=wx+b\), MSE, sigmoid, cross-entropy, gradient-descent updates, ReLU and attention.
   \item Explain why a perceptron handles AND/OR but not XOR; how hidden layers solve nonlinear separation; and how forward propagation/backpropagation train an MLP.
   \item Explain CNN locality and weight sharing, receptive fields and the biological inspiration of hierarchical visual features.
   \item Explain tokenization, embeddings, positional encoding, \(Q/K/V\) attention and why Transformers handle long-range dependencies.
+  \item For a CNN synthesis answer, connect AlexNet's ImageNet data, GPU training and CNN architecture
+  to deep hierarchical features, parameter efficiency, the receptive-field limitation, and the
+  direct long-range connections provided by self-attention.
+  \item Be able to identify the first principal component as the direction of maximum variance,
+  distinguish PCA from an autoencoder, and describe autoregressive next-token generation.
   \item For any biomedical AI claim, ask: What is the biological target? What data and labels are used? What is the split and baseline? How is leakage prevented? Which metric and external validation support the claim? What are failure modes and clinical consequences?
 \end{itemize}
 

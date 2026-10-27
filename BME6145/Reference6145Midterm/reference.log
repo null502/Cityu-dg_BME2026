@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.27)  25 OCT 2026 18:11
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.27)  27 OCT 2026 23:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"e:/textbook/Cityu_BME/y1s1/6145 Applied Artificial Intelligence for Biomedical and Healthcare Application/Reference6145Midterm/reference"
-(e:/textbook/Cityu_BME/y1s1/6145 Applied Artificial Intelligence for Biomedical and Healthcare Application/Reference6145Midterm/reference.tex
+**"e:/textbook/Cityu_BME/y1s1/6145 Applied Artificial Intelligence for Biomedical and Healthcare Application/2026SemiA/Reference6145Midterm/reference"
+(e:/textbook/Cityu_BME/y1s1/6145 Applied Artificial Intelligence for Biomedical and Healthcare Application/2026SemiA/Reference6145Midterm/reference.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (f:/Latex/main/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls (f:/Latex/main/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -805,25 +805,33 @@ Package fontspec Info:
  [1
 
 ]
-Overfull \hbox (20.5746pt too wide) detected at line 222
+File: (Non)linearOperation.png Graphic file (type bmp)
+<(Non)linearOperation.png>
+
+Overfull \hbox (20.5746pt too wide) detected at line 242
 [] \OT1/cmr/m/n/10 = []([])([]) + []\OML/cmm/m/it/10 :
  []
 
-[2] [3] (./reference.aux)
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
+[]\TU/lmr/m/n/10 An autoencoder learns $[] \OMS/cmsy/m/n/10 ! [] !
+ []
+
+[3] (./reference.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `reference.out' has not changed.
-(rerunfilecheck)             Checksum: 3774DCC22D8DD9E8BDDA3752FF52EB74;5495.
+(rerunfilecheck)             Checksum: DA440FDC550D4FB279B77E4B9F6D9E68;6905.
  ) 
 Here is how much of TeX's memory you used:
- 19922 strings out of 473832
- 412294 string characters out of 5728108
- 918483 words of memory out of 5000000
- 42705 multiletter control sequences out of 15000+600000
+ 19933 strings out of 473832
+ 412603 string characters out of 5728108
+ 918971 words of memory out of 5000000
+ 42714 multiletter control sequences out of 15000+600000
  565808 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1331b,880s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,1341b,863s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on reference.pdf (3 pages).

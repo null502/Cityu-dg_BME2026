@@ -1,0 +1,275 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=0.55in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlist{nosep,leftmargin=*}
+\newcommand{\ans}[1]{\par\textbf{Correct answer: #1}}
+\newcommand{\expn}[1]{\par\textit{Explanation: #1}}
+\newcommand{\keyans}[1]{\par\textbf{Reference answer key:} #1}
+\begin{document}
+\begin{center}
+{\Large\bf BME 6145 Midterm Prediction Examination}\\
+\small Applied Artificial Intelligence for Biomedical and Healthcare Applications
+\end{center}
+
+\section*{I. Multiple Choice Questions}
+\begin{enumerate}[label=\textbf{\arabic*.},itemsep=4pt]
+\item Which description best distinguishes machine learning from an expert system?
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item It learns patterns from data\item It always uses rules by hand\item It never needs training\item It cannot make predictions\end{enumerate}
+\ans{A}. \expn{Machine learning estimates patterns from examples rather than relying only on hand-coded rules.}
+\item After training, a model applied to an unseen patient is performing:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item labeling\item inference\item tokenization\item normalization\end{enumerate}
+\ans{B}. \expn{Inference is the use of learned parameters on new inputs.}
+\item Which trend is associated with modern AI scaling?
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item Less data and less compute\item Rules replacing data\item More data, parameters, and compute\item Removing validation\end{enumerate}
+\ans{C}. \expn{Modern systems commonly scale training data, model parameters, and computational resources.}
+\item Predicting blood glucose from BMI is an example of:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item classification\item clustering\item generation\item regression\end{enumerate}
+\ans{D}. \expn{Blood glucose is a continuous target, so the task is regression.}
+\item Predicting Type 1 versus Type 2 diabetes is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item classification\item regression\item dimensionality reduction\item reconstruction\end{enumerate}
+\ans{A}. \expn{The target consists of discrete categories.}
+\item Unsupervised learning uses:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item only test labels\item unlabeled inputs\item hand-written rules\item a fixed answer key\end{enumerate}
+\ans{B}. \expn{Unsupervised methods discover structure without target labels.}
+\item In a Jupyter notebook, execution order matters because:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item cells cannot contain code\item Markdown changes labels\item cells share kernel state\item imports are forbidden\end{enumerate}
+\ans{C}. \expn{Variables and imports persist in the active kernel and depend on prior execution.}
+\item The main purpose of a Conda environment is to:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item replace all notebooks\item remove dependencies\item label training data\item isolate packages and interpreters\end{enumerate}
+\ans{D}. \expn{Environments reduce conflicts by isolating project-specific Python versions and packages.}
+\item For linear regression, the model is commonly written as:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item $\hat y=wx+b$\item $\hat y=\sigma(w^Tx)$\item $\hat y=\max(0,x)$\item $\hat y=x^2+b^2$\end{enumerate}
+\ans{A}. \expn{A linear model uses a weighted input plus an intercept.}
+\item The standard regression loss emphasized in the course is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item accuracy\item MSE\item AUC\item cross-entropy only\end{enumerate}
+\ans{B}. \expn{Mean squared error measures squared prediction errors for continuous outputs.}
+\item In $E^{(i)}=\hat y^{(i)}-y^{(i)}$, $E^{(i)}$ is the:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item learning rate\item bias parameter\item prediction error\item class label\end{enumerate}
+\ans{C}. \expn{It is the difference between prediction and observed target for sample $i$.}
+\item Gradient descent updates parameters in the direction:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item of increasing cost\item of larger errors\item of random noise\item opposite the gradient\end{enumerate}
+\ans{D}. \expn{The negative gradient points toward decreasing cost locally.}
+\item If the learning rate is too large, training may:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item diverge or oscillate\item stop needing data\item guarantee a minimum\item remove the bias\end{enumerate}
+\ans{A}. \expn{Large steps can overshoot the minimum.}
+\item For a suitable learning rate in basic linear regression, the cost generally:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item increases forever\item decreases toward a minimum\item becomes a label\item ignores parameters\end{enumerate}
+\ans{B}. \expn{Gradient descent follows downhill directions on the convex cost surface.}
+\item Logistic regression is mainly used for:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item image compression\item clustering only\item binary classification\item DNA tokenization\end{enumerate}
+\ans{C}. \expn{It maps a linear score to a probability for binary classification.}
+\item The sigmoid function maps a real-valued score to:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item $(-\infty,\infty)$ only\item integers only\item image pixels\item $[0,1]$\end{enumerate}
+\ans{D}. \expn{$\sigma(z)=1/(1+e^{-z})$ produces values between zero and one.}
+\item Binary cross-entropy strongly penalizes:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item confident wrong predictions\item correct uncertain predictions only\item large images\item short sequences\end{enumerate}
+\ans{A}. \expn{Log loss becomes large when a model assigns high probability to the wrong class.}
+\item A decision boundary from logistic regression is linear in:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item the training epochs\item the input features\item the labels only\item the validation set\end{enumerate}
+\ans{B}. \expn{The thresholded linear score defines a hyperplane in feature space.}
+\item Standardization is useful before neural-network training because it:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item creates labels\item guarantees no overfitting\item aligns feature scales\item replaces testing\end{enumerate}
+\ans{C}. \expn{Similar scales can improve optimization and prevent one feature from dominating numerically.}
+\item A biological neuron is abstracted mathematically as:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item clustering plus PCA\item token plus position\item loss plus dataset\item weighted sum plus activation\end{enumerate}
+\ans{D}. \expn{The artificial neuron computes $z=w^Tx+b$ and then applies an activation.}
+\item A perceptron can represent:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item linearly separable classes\item every nonlinear relation\item only regression\item only unlabeled data\end{enumerate}
+\ans{A}. \expn{A single perceptron has one linear decision boundary.}
+\item Which logic gate motivates hidden layers?
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item AND\item XOR\item OR\item NOT only\end{enumerate}
+\ans{B}. \expn{XOR is not linearly separable by one straight boundary.}
+\item The main purpose of a hidden layer is to:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item remove all labels\item prevent forward propagation\item learn nonlinear feature transformations\item sort patients\end{enumerate}
+\ans{C}. \expn{Composed nonlinear transformations permit nonlinear decision boundaries.}
+\item Forward propagation computes:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item gradients only\item test labels\item PCA directions\item predictions from inputs\end{enumerate}
+\ans{D}. \expn{Inputs pass through layers to produce an output prediction.}
+\item Backpropagation uses the chain rule to compute:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item parameter gradients\item patient diagnoses\item token IDs\item PCA scores only\end{enumerate}
+\ans{A}. \expn{It propagates loss derivatives backward through the network.}
+\item The usual hidden-layer activation in the genomics notebook is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item sigmoid only\item ReLU\item softmax only\item identity only\end{enumerate}
+\ans{B}. \expn{ReLU helps optimization and reduces saturation compared with sigmoid in hidden layers.}
+\item A major issue with saturated sigmoid units is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item too many labels\item no output range\item vanishing gradients\item loss of all inputs\end{enumerate}
+\ans{C}. \expn{Sigmoid derivatives become very small at extreme inputs.}
+\item The output activation for binary classification in the notebook is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item ReLU\item PCA\item convolution\item sigmoid\end{enumerate}
+\ans{D}. \expn{A sigmoid output represents a binary-class probability.}
+\item The loss paired with the binary sigmoid output is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item BinaryCrossentropy\item MSE only\item PCA loss\item categorical distance\end{enumerate}
+\ans{A}. \expn{Binary cross-entropy is appropriate for binary probabilistic predictions.}
+\item In a supervised dataset, the response variable is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item the optimizer\item the target label\item the batch size\item the kernel width\end{enumerate}
+\ans{B}. \expn{The response is the outcome the model learns to predict.}
+\item One-hot encoding DNA bases represents each base as:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item a continuous diagnosis\item a loss value\item a four-dimensional indicator vector\item a PCA axis\end{enumerate}
+\ans{C}. \expn{Each of A, C, G, and T receives one indicator dimension.}
+\item A DNA binding-site classifier in the notebook predicts whether a sequence:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item contains an image\item has high glucose\item is a PCA component\item binds a transcription factor\end{enumerate}
+\ans{D}. \expn{The simulated assay labels sequences as binding or non-binding.}
+\item A validation set is mainly used to:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item monitor generalization during training\item update every weight directly\item replace training data\item encode nucleotides\end{enumerate}
+\ans{A}. \expn{Validation performance helps detect overfitting and select training choices.}
+\item If training accuracy rises while validation accuracy falls, this suggests:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item under-sampling only\item overfitting\item PCA compression\item perfect generalization\end{enumerate}
+\ans{B}. \expn{The model is fitting training examples without improving unseen-data performance.}
+\item Batch size is the number of samples used to:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item define the test label\item create a token vocabulary\item estimate one gradient update\item calculate PCA axes\end{enumerate}
+\ans{C}. \expn{A batch supplies examples for one optimizer update.}
+\item A CNN kernel primarily detects:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item only global averages\item class labels directly\item environment conflicts\item local patterns\end{enumerate}
+\ans{D}. \expn{Convolution scans local patches for learned motifs.}
+\item CNNs reduce parameters through:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item local connections and weight sharing\item larger dense layers\item removing activations\item using no training\end{enumerate}
+\ans{A}. \expn{The same kernel is reused across local regions instead of using a separate weight everywhere.}
+\item A convolution output at one position is commonly a:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item global label count\item local dot product\item PCA eigenvalue only\item token ID\end{enumerate}
+\ans{B}. \expn{The kernel weights are multiplied with a local input patch and summed.}
+\item In microscopy, early CNN layers may detect:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item clinical outcomes directly\item whole patients\item edges and lines\item validation splits\end{enumerate}
+\ans{C}. \expn{Deeper layers combine simple local features into shapes and morphology.}
+\item The receptive field is the input region that can:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item define the optimizer\item store labels\item replace a kernel\item influence one unit\end{enumerate}
+\ans{D}. \expn{It describes which input positions are accessible to a feature unit.}
+\item Compared with CNNs, self-attention can connect distant tokens in:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item one direct hop\item no hops\item only one local pixel\item a separate dataset\end{enumerate}
+\ans{A}. \expn{Each token can attend directly to every other token.}
+\item Tokenization converts a sequence into:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item gradients\item discrete tokens\item PCA components\item loss curves\end{enumerate}
+\ans{B}. \expn{Words, subwords, nucleotides, or $k$-mers can serve as tokens.}
+\item A DNA language model may tokenize a sequence using:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item only diagnoses\item only images\item bases or $k$-mers\item loss values\end{enumerate}
+\ans{C}. \expn{Both single nucleotides and fixed-length substrings are possible.}
+\item Learned token embeddings are:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item binary labels only\item gradients only\item test predictions only\item dense vectors\end{enumerate}
+\ans{D}. \expn{An embedding layer maps token IDs to trainable vector representations.}
+\item Positional encoding is needed because attention alone:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item does not preserve order\item cannot use vectors\item always labels data\item removes sequence length\end{enumerate}
+\ans{A}. \expn{Position information is added to make otherwise order-insensitive attention sequence-aware.}
+\item In self-attention, $Q$ and $K$ primarily determine:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item training labels\item relevance weights\item convolution width\item PCA variance\end{enumerate}
+\ans{B}. \expn{Query-key similarity produces attention scores.}
+\item In self-attention, $V$ supplies:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item the learning rate\item the target label\item information being mixed\item the test split\end{enumerate}
+\ans{C}. \expn{Values are combined using the attention weights.}
+\item The scaled dot-product attention formula contains:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item $MSE(w,b)$ only\item $wx+b$ only\item $\mathrm{ReLU}(x)$ only\item $\mathrm{softmax}(QK^T/\sqrt{d_k})V$\end{enumerate}
+\ans{D}. \expn{This is the course formula for self-attention.}
+\item Causal masking in autoregressive generation prevents a token from seeing:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item future tokens\item its own embedding\item past tokens\item its position\end{enumerate}
+\ans{A}. \expn{Next-token prediction must use only the prefix.}
+\item Autoregressive generation repeatedly:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item removes all tokens\item predicts and appends the next token\item calculates PCA first\item changes labels\end{enumerate}
+\ans{B}. \expn{The predicted token is appended and becomes part of the next prefix.}
+\item PCA finds directions of:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item minimum sample count\item maximum label error\item maximum projected variance\item random token order\end{enumerate}
+\ans{C}. \expn{Principal components summarize directions with large variance.}
+\item PCA is primarily a:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item binary classifier\item language tokenizer\item gradient optimizer\item linear dimensionality-reduction method\end{enumerate}
+\ans{D}. \expn{PCA uses linear combinations of input features.}
+\item The first principal component explains:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item the greatest variance\item no variance\item all labels\item only noise\end{enumerate}
+\ans{A}. \expn{PC1 is chosen to maximize projected variance.}
+\item A PCA score is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item a class label\item a sample coordinate in PC space\item a kernel weight\item a batch index\end{enumerate}
+\ans{B}. \expn{Projection onto PCs gives low-dimensional sample coordinates.}
+\item An autoencoder consists of:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item tokenizer, label, test\item kernel, bias, label only\item encoder, bottleneck, decoder\item PCA, AUC, batch\end{enumerate}
+\ans{C}. \expn{The encoder compresses and the decoder reconstructs the input.}
+\item The latent space of an autoencoder is:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item a raw label table\item a validation metric\item a kernel image\item a compressed representation\end{enumerate}
+\ans{D}. \expn{The bottleneck stores lower-dimensional learned features.}
+\item A standard autoencoder is trained to:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item reconstruct its input\item predict only future tokens\item maximize class count\item remove all features\end{enumerate}
+\ans{A}. \expn{The input serves as the reconstruction target without requiring labels.}
+\item A limitation of standard PCA is that it may miss:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item all linear variation\item nonlinear curved structure\item sample coordinates\item correlated features\end{enumerate}
+\ans{B}. \expn{PCA represents linear directions and may poorly capture branching nonlinear trajectories.}
+\item The notebook metric AUC is useful for evaluating:
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item Python syntax\item token length only\item ranking of binary predictions\item PCA reconstruction only\end{enumerate}
+\ans{C}. \expn{AUC summarizes discrimination across classification thresholds.}
+\item Which split should remain untouched for final performance estimation?
+\begin{enumerate}[label=\Alph*.,itemsep=0pt]\item training set\item batch set\item token set\item test set\end{enumerate}
+\ans{D}. \expn{The test set estimates generalization after model choices are finalized.}
+\end{enumerate}
+
+\section*{II. True/False Questions}
+\begin{enumerate}[label=\textbf{\arabic*.},start=61,itemsep=3pt]
+\item Machine learning always requires hand-written rules. \ans{False}. \expn{It can learn patterns from data.}
+\item Inference uses a trained model on new inputs. \ans{True}. \expn{Inference follows training.}
+\item Regression predicts a categorical label by definition. \ans{False}. \expn{Regression predicts a continuous output.}
+\item Unsupervised learning requires correct target labels. \ans{False}. \expn{It discovers structure without target labels.}
+\item A Jupyter notebook can contain code and Markdown cells. \ans{True}. \expn{Both are standard cell types.}
+\item MSE is commonly used for continuous regression targets. \ans{True}. \expn{It averages squared prediction errors.}
+\item Gradient descent moves in the direction of increasing cost. \ans{False}. \expn{It moves opposite the gradient.}
+\item A very large learning rate can cause oscillation. \ans{True}. \expn{Updates may overshoot the minimum.}
+\item The sigmoid output is always below zero. \ans{False}. \expn{It lies between zero and one.}
+\item Cross-entropy is suitable for binary probabilistic classification. \ans{True}. \expn{It penalizes incorrect probabilities.}
+\item A single perceptron can solve XOR with one linear boundary. \ans{False}. \expn{XOR is not linearly separable.}
+\item Hidden layers can create nonlinear decision boundaries. \ans{True}. \expn{Layered nonlinear transformations enable this.}
+\item Backpropagation computes gradients using the chain rule. \ans{True}. \expn{It propagates derivatives through layers.}
+\item ReLU is defined as $\max(0,z)$. \ans{True}. \expn{Negative inputs map to zero.}
+\item Standardization guarantees that a model cannot overfit. \ans{False}. \expn{It helps optimization but does not guarantee generalization.}
+\item One-hot encoding assigns one active base dimension per DNA nucleotide. \ans{True}. \expn{A, C, G, and T use four indicator dimensions.}
+\item The validation set should directly update model weights in ordinary supervised training. \ans{False}. \expn{It monitors choices rather than providing training updates.}
+\item A growing training score with falling validation score is consistent with overfitting. \ans{True}. \expn{The model is losing unseen-data performance.}
+\item Batch size is the number of classes. \ans{False}. \expn{It is the number of samples per update.}
+\item CNN kernels use the same learned weights at different positions. \ans{True}. \expn{This is weight sharing.}
+\item CNNs connect every input pixel to every hidden unit by definition. \ans{False}. \expn{Convolution uses sparse local connections.}
+\item A receptive field describes accessible input positions. \ans{True}. \expn{It is the input region influencing a unit.}
+\item Self-attention can directly connect distant sequence positions. \ans{True}. \expn{Every token can compare with every other token.}
+\item Positional encoding is unnecessary for ordered sequences. \ans{False}. \expn{Attention needs position information to represent order.}
+\item Query-key similarity helps determine attention weights. \ans{True}. \expn{$QK^T$ produces relevance scores.}
+\item PCA requires class labels to find principal components. \ans{False}. \expn{PCA is unsupervised.}
+\item PC1 captures the greatest projected variance. \ans{True}. \expn{That is its defining optimization criterion.}
+\item PCA can perfectly represent every nonlinear biological trajectory with one component. \ans{False}. \expn{PCA is linear and may miss curved structure.}
+\item An autoencoder uses its input as a reconstruction target. \ans{True}. \expn{This permits label-free representation learning.}
+\item A positive result in melanoma recurrence prevention proves prevention in healthy people. \ans{False}. \expn{That clinical population and endpoint are different.}
+\end{enumerate}
+
+\section*{III. Short-Answer Questions}
+\begin{enumerate}[label=\textbf{\arabic*.},start=91,itemsep=6pt]
+\item Distinguish AI, machine learning, neural networks, deep learning, and generative AI.
+\keyans{AI is the broad goal; ML learns from data; neural networks are trainable layered functions; deep learning uses many layers; generative AI produces new samples.}
+\item Explain supervised learning and give one biomedical regression and one classification example.
+\keyans{Supervised learning uses inputs with target labels. Predicting glucose is regression; predicting diabetes type is classification.}
+\item State the gradient-descent workflow for linear regression.
+\keyans{Initialize $w,b$; compute predictions and cost; calculate gradients; update $w,b$ opposite the gradient; repeat until stopping.}
+\item Why can a perceptron solve AND but not XOR?
+\keyans{AND is linearly separable by one hyperplane. XOR has alternating classes, so no single straight boundary separates them; hidden layers are needed.}
+\item Describe forward propagation and backpropagation in an MLP.
+\keyans{Forward propagation computes predictions layer by layer. Backpropagation propagates the loss gradient backward using the chain rule, then parameters are updated.}
+\item Explain why CNNs are parameter-efficient for images or genomic motifs.
+\keyans{CNNs use sparse local connections and shared kernels. They reuse the same detector across positions and learn hierarchical local features.}
+\item Compare CNNs and self-attention for long-range sequence relationships.
+\keyans{CNN receptive fields grow through stacked local layers. Self-attention connects distant tokens directly in one layer, although it can be computationally expensive.}
+\item Describe tokenization, embedding, and positional encoding in a Transformer.
+\keyans{Tokenization creates discrete units; embeddings map IDs to learned dense vectors; positional encoding adds order information before attention.}
+\item Explain PCA and one limitation in biomedical data analysis.
+\keyans{PCA finds linear directions of maximum variance and projects samples into fewer coordinates. It may miss nonlinear curved or branching structure.}
+\item Describe the personalized mRNA cancer-vaccine workflow and the role of AI.
+\keyans{Tumor sequencing identifies neoantigens; AI ranks likely immunogenic targets; selected sequences are delivered as mRNA in lipid nanoparticles to stimulate T cells.}
+\end{enumerate}
+
+\section*{IV. Long/Essay Questions}
+\begin{enumerate}[label=\textbf{\arabic*.},start=101,itemsep=8pt]
+\item Explain why AlexNet was a turning point for modern deep learning and connect its success to CNN principles.
+\keyans{Discuss ImageNet-scale labeled data, GPU training, and CNN architecture. Explain hierarchical features, local connections, weight sharing, and fewer parameters than dense networks. Note that deeper CNNs still face long-range-dependency limitations.}
+\item Design a reliable workflow for training a binary DNA-binding classifier using the provided notebook concepts.
+\keyans{Encode bases with one-hot encoding; split into training, validation, and test sets; train a network with ReLU hidden units and sigmoid output; use BinaryCrossentropy and an optimizer such as Adam; monitor accuracy/AUC and validation behavior; evaluate once on untouched test data and avoid leakage.}
+\item Compare logistic regression, a single perceptron, and an MLP for biomedical classification.
+\keyans{All compute weighted sums and activations at a basic level. Logistic regression uses a sigmoid and linear boundary; a perceptron is a single error-trained neuron with linear separation; an MLP adds hidden nonlinear transformations and can represent XOR-like boundaries but may overfit.}
+\item Explain how a Transformer represents and generates a biological sequence.
+\keyans{Tokenize bases or $k$-mers, map IDs to embeddings, add positional information, and form $Q,K,V$. Self-attention mixes values using query-key scores; causal masking enables next-token prediction, and generation appends predictions iteratively.}
+\item A gene-expression study has thousands of features and limited samples. Compare PCA with an autoencoder and recommend an analysis strategy.
+\keyans{PCA gives an unsupervised linear maximum-variance projection and interpretable variance summaries. An autoencoder learns encoder--latent--decoder nonlinear representations by reconstruction. Standardize appropriately, inspect explained variance/reconstruction and visualizations, validate downstream use, and avoid treating latent structure as causal evidence.}
+\end{enumerate}
+\end{document}
